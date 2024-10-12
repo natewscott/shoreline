@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: $body;
+    font-weight: $font-normal;
+    color: $color-dark;
+    font-optical-sizing: auto;
+    line-height: 1.75;
+    height: 100%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

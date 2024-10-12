@@ -1,0 +1,14 @@
+{
+  "name": "shoreline",
+  "version": "1.0.0",
+  "description": "Shoreline Lake Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass/main.scss assets/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}

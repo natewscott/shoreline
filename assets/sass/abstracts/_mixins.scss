@@ -1,0 +1,30 @@
+@mixin breakpoint($point) {
+    @if $point==xlarge {
+        @media (min-width: $breakpoint-xxl-portrait) {
+            @content;
+        }
+    }
+    @else if $point==large {
+        @media (min-width: $breakpoint-lg-portrait) {
+            @content;
+        }
+    }
+
+    @else if $point==medium {
+        @media (min-width: $breakpoint-md-portrait) {
+            @content;
+        }
+    }
+
+    @else if $point==small {
+        @media(min-width: $breakpoint-sm-portrait) {
+            @content;
+        }
+    }
+
+    @else if $point==mobile {
+        @media(max-width: $breakpoint-xs-portrait) {
+            @content;
+        }
+    }
+}
