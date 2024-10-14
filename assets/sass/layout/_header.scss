@@ -1,0 +1,36 @@
+.header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 4rem;
+
+    &__logo {
+        width: 22rem;
+    }
+}
+
+.nav {
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__item {
+        color: $color-white;
+        font-size: 1.8rem;
+        margin-right: 6.4rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    
+   
+}
