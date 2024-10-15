@@ -19,4 +19,35 @@
         height: 100vh; /* Make the video fill the height of the viewport */
         object-fit: cover; /* Ensures the video covers the entire area */
     }
-}
+
+    &__links {
+     position: absolute;
+     top: 50%;
+     left: 4rem;
+     transform: translateY(-50%);
+     z-index: 2;
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+
+        a {
+            display: flex; /* Enable flexbox for the link */
+            align-items: center; /* Vertically center the icon and text */
+            gap: 1rem; /* Add space between the icon and text */
+            color: white;
+            font-size: 3.89rem;
+            text-decoration: none;
+        }
+
+    &--icon {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    }
+} 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoreline Lake</title>
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -20,7 +23,7 @@
      <nav class="nav">
         <ul class="nav__items">
             <li class="nav__item">
-                <a href="">
+                <a href="play.html">
                     Play
                 </a>
             </li>
@@ -31,12 +34,36 @@
             <li class="nav__item">Contact</li>
         </ul>
      </nav>
+     <button class="hamburger" id="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+     </button>
     </header>
 
     <main class="main">
         <section class="hero">
             <video autoplay loop class="hero__vid" src="imgs/videos/home.mp4"></video>
-          
+           <div class="hero__links">
+                <a href="play.html">
+                    <span class="hero__links--icon">
+                        <img src="imgs/misc/play-icon.png" alt="">
+                    </span>
+                    play
+                </a>
+                <a href="learn.html">
+                    <span class="hero__links--icon">
+                        <img src="imgs/misc/learn-icon.png" alt="">
+                    </span>
+                    learn
+                </a>
+                <a href="unwind.html">
+                    <span class="hero__links--icon">
+                        <img src="imgs/misc/unwind-icon.png" alt="">
+                    </span>
+                    unwind
+                </a>
+           </div>
         </section>
         
     </main>

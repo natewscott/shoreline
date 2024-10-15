@@ -1,20 +1,20 @@
 @use "sass:color";
 
-$body: "Quicksand", sans-serif;
+$body: "Work Sans", sans-serif;
 $font-light: 300;
 $font-normal: 400;
 $font-medium: 500;
 $font-heavy: 600;
 //Color
-$color-primary: #0488A6;
-$color-secondary: #F07522;
-$color-tertiary: #118954;
-$color-quaternary: #F0B61B;
+$color-primary: #002E5F;
+$color-secondary: #25AAE1;
+$color-tertiary: #F8901F;
+$color-quaternary: #FFDE16;
 $color-dark: #101820;
 $color-white: color.adjust($color-dark, $lightness: 87%);
 $admin-color-dark: #242e42;
 $color-link: $color-secondary;
-$color-errors: #A72B2A;
+$color-errors: #BF1E2E;
 $color-success: $color-tertiary;
 $admin-nav-width:22rem;
 // Mobile

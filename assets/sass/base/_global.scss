@@ -1,9 +1,11 @@
 html {
+
     font-size: 62.5%;
     height: 100%;
 }
 
 body {
+    font-optical-sizing: auto;
     font-family: $body;
     font-weight: $font-normal;
     color: $color-dark;
