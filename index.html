@@ -16,8 +16,10 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <img  src="imgs/misc/SL_logo-white.png" alt="">
-            <!-- <img src="imgs/misc/SL_logo-white.svg" alt=""> -->
+            <a href="index.html">
+                <img  src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+            
         </div>
        
      <nav class="nav">
@@ -27,11 +29,31 @@
                     Play
                 </a>
             </li>
-            <li class="nav__item">Learn</li>
-            <li class="nav__item">Unwind</li>
-            <li class="nav__item">Events</li>
-            <li class="nav__item">About</li>
-            <li class="nav__item">Contact</li>
+            <li class="nav__item">
+                <a href="learn.html">
+                    Learn
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="unwind.html">
+                    Unwind
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="events.html">
+                    Events
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
         </ul>
      </nav>
      <button class="hamburger" id="hamburger">
@@ -42,8 +64,10 @@
     </header>
 
     <main class="main">
-        <section class="hero">
-            <video autoplay loop class="hero__vid" src="imgs/videos/home.mp4"></video>
+        <section class="hero--home">
+            <video autoplay loop muted playsinlie class="hero__vid">
+                <source src="imgs/videos/home.mp4" type="video/mp4">
+            </video>
            <div class="hero__links">
                 <a href="play.html">
                     <span class="hero__links--icon">
@@ -64,6 +88,40 @@
                     unwind
                 </a>
            </div>
+           <article class="weather">
+            <ul class="weather__info">
+                <li class="weather__detail">
+                    <span class="weather__icon">
+                        <img src="imgs/misc/Partly-cloudy.png" alt="">
+                    </span>
+                    80&deg;
+                </li>
+                <li class="weather__detail">
+                    <span class="weather__icon">
+                        <img src="imgs/misc/Wind.png" alt="">
+                    </span>
+                    12KT
+                </li>
+            </ul>
+           </article>
+           <article class="announcements" aria-expanded="true">
+            <div class="announcements__details">
+                <p>Fall Classes are ready</p>
+                <a href=""> Register Here</a>
+            </div>
+            <div class="announcements__header" role="button" aria-controls="announcement-content" aria-expanded="true" tabindex="0">
+                <span class="announcements__closed" >
+                    <p>
+                        Announcements
+                    </p>
+                    &#8963;
+                </span>
+                <span class="announcements__open" >	
+                    &#8964;
+                </span>
+            </div>
+        </article>
+        
         </section>
         
     </main>

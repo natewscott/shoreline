@@ -23,6 +23,17 @@ main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    &__content {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.inner__container {
+    max-width: 96rem;
+    margin: 0 auto;
+    margin-top: 4rem;
 }
 
 a {

@@ -385,15 +385,98 @@ main {
   display: flex;
   flex-direction: column;
 }
+main__content {
+  display: flex;
+  width: 100%;
+}
+
+.inner__container {
+  max-width: 96rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
 
 a {
   color: rgb(242.8, 245.85, 248.9);
   text-decoration: none;
 }
 
+h1 {
+  font-size: 4.778rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
 p,
 li {
   font-size: 1.6rem;
+}
+
+.weather {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+}
+.weather__info {
+  display: flex;
+  gap: 2.4rem;
+  color: rgb(242.8, 245.85, 248.9);
+}
+.weather__detail {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.4rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.announcements {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  background-color: rgba(242.8, 245.85, 248.9, 0.8);
+  padding: 1.6rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: #002E5F;
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+  align-items: center;
+}
+.announcements[aria-expanded=false] .announcements__details {
+  display: none;
+}
+.announcements[aria-expanded=false] .announcements__closed {
+  display: flex;
+  align-items: center;
+}
+.announcements[aria-expanded=false] .announcements__open {
+  display: none;
+}
+.announcements[aria-expanded=true] .announcements__details {
+  display: block;
+}
+.announcements[aria-expanded=true] .announcements__closed {
+  display: none;
+}
+.announcements[aria-expanded=true] .announcements__open {
+  display: inline-block;
+}
+.announcements__header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.announcements__header span {
+  font-size: 2.4rem;
+}
+.announcements__details {
+  display: block;
+}
+.announcements__details a {
+  color: #BF1E2E;
 }
 
 .header {
@@ -478,7 +561,7 @@ li {
 }
 
 .hero {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
 }
@@ -492,10 +575,26 @@ li {
   background-color: rgba(0, 0, 0, 0.2); /* 20% opacity black overlay */
   z-index: 1; /* Ensure the overlay sits above the video */
 }
+.hero--home {
+  overflow: hidden;
+}
 .hero__vid {
   width: 100%;
   height: 100vh; /* Make the video fill the height of the viewport */
   object-fit: cover; /* Ensures the video covers the entire area */
+}
+.hero__titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color: rgb(242.8, 245.85, 248.9);
+  text-align: center;
+  z-index: 2;
+}
+.hero__subtitle {
+  font-size: 3.981rem;
+  z-index: 2;
 }
 .hero__links {
   position: absolute;

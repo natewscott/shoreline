@@ -1,0 +1,57 @@
+@use "sass:color";
+
+.announcements {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+    background-color: rgba($color-white, 0.8);
+    padding: 1.6rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: $color-primary;
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    align-items: center;
+
+    &[aria-expanded="false"] {
+        .announcements__details {
+            display: none;
+        }
+        .announcements__closed {
+            display: flex;
+            align-items: center;
+        }
+        .announcements__open {
+            display: none;
+        }
+    }
+
+    &[aria-expanded="true"] {
+        .announcements__details {
+            display: block;
+        }
+        .announcements__closed {
+            display: none;
+        }
+        .announcements__open {
+            display: inline-block;
+        }
+    }
+
+    &__header {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__details {
+        display: block;
+        a {
+            color: $color-errors;
+        }
+    }
+}
