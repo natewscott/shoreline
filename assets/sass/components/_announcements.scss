@@ -3,7 +3,7 @@
 .announcements {
     position: absolute;
     bottom: 4rem;
-    right: 4rem;
+    right: 2.5rem;
     background-color: rgba($color-white, 0.8);
     padding: 1.6rem;
     border-radius: 5px;
@@ -13,6 +13,7 @@
     flex-direction: row;
     gap: 2.4rem;
     align-items: center;
+    z-index: 20;
 
     &[aria-expanded="false"] {
         .announcements__details {
@@ -21,6 +22,7 @@
         .announcements__closed {
             display: flex;
             align-items: center;
+            gap: 2.4rem;
         }
         .announcements__open {
             display: none;
