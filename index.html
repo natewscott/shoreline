@@ -65,7 +65,7 @@
 
     <main class="main">
         <section class="hero hero--home">
-            <video autoplay loop muted playsinlie class="hero__vid">
+            <video autoplay loop muted playsinline preload="auto" class="hero__vid">
                 <source src="imgs/videos/home.mp4" type="video/mp4">
             </video>
            <div class="hero__links">
@@ -88,42 +88,45 @@
                     unwind
                 </a>
            </div>
-           <article class="weather">
-            <ul class="weather__info">
-                <li class="weather__detail">
-                    <span class="weather__icon">
-                        <img src="imgs/misc/Partly-cloudy.png" alt="">
+           <footer class="footer footer--home">
+            <article class="weather">
+                <ul class="weather__info">
+                    <li class="weather__detail">
+                        <span class="weather__icon">
+                            <img src="imgs/misc/Partly-cloudy.png" alt="">
+                        </span>
+                        80&deg;
+                    </li>
+                    <li class="weather__detail">
+                        <span class="weather__icon">
+                            <img src="imgs/misc/Wind.png" alt="">
+                        </span>
+                        12KT
+                    </li>
+                </ul>
+               </article>
+               <article class="announcements" aria-expanded="true">
+                <div class="announcements__details">
+                    <p>Fall Classes are ready</p>
+                    <a href=""> Register Here</a>
+                </div>
+                <div class="announcements__header" role="button" aria-controls="announcement-content" aria-expanded="true" tabindex="0">
+                    <span class="announcements__closed" >
+                        <p >
+                            Announcements
+                        </p>
+                        <div>
+                            &#8963;
+                        </div>
+                       
                     </span>
-                    80&deg;
-                </li>
-                <li class="weather__detail">
-                    <span class="weather__icon">
-                        <img src="imgs/misc/Wind.png" alt="">
+                    <span class="announcements__open" >	
+                        &#8964;
                     </span>
-                    12KT
-                </li>
-            </ul>
-           </article>
-           <article class="announcements" aria-expanded="true">
-            <div class="announcements__details">
-                <p>Fall Classes are ready</p>
-                <a href=""> Register Here</a>
-            </div>
-            <div class="announcements__header" role="button" aria-controls="announcement-content" aria-expanded="true" tabindex="0">
-                <span class="announcements__closed" >
-                    <p >
-                        Announcements
-                    </p>
-                    <div>
-                        &#8963;
-                    </div>
-                   
-                </span>
-                <span class="announcements__open" >	
-                    &#8964;
-                </span>
-            </div>
-        </article>
+                </div>
+            </article>
+           </footer>
+           
         
         </section>
         

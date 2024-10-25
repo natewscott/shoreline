@@ -1,0 +1,42 @@
+.cards {
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    @include breakpoint(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    &__details {
+        max-width: 583px;
+
+        &--right {
+            padding: 2.4rem 0;
+            @include breakpoint(medium) {
+                padding: 2.4rem 0 2.4rem 6.4rem;
+            }
+        }
+        
+        &--left{
+            padding: 2.4rem 0;
+            @include breakpoint(medium) {
+                padding: 2.4rem 6.4rem 2.4rem 0;
+            }
+        }
+        
+        h2 {
+           margin-bottom: 4rem; 
+           line-height: 1.2;
+        }
+        p {
+            margin-bottom: 2.4rem;
+        }
+    }
+}

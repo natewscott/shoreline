@@ -1,0 +1,94 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    @include breakpoint(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &--home {
+        position: absolute;
+        bottom: 0;
+        flex-direction: row;
+        width: 100%;
+        @include breakpoint(medium) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    padding: 2.4rem 2.4rem;
+    @include breakpoint(medium) {
+        padding: 4rem 4rem;
+    }
+    
+
+    &__user-actions {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include breakpoint(medium) {
+            flex-direction: row;
+        }
+
+        a {
+            color: $color-primary;
+        }
+    }
+
+    &__newsletter {
+      
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        font-weight: $font-heavy;
+        letter-spacing: .25rem;
+        line-height: 0;
+      
+
+        span {
+            font-size: 1.1rem;
+            letter-spacing: .19rem;
+        }
+    }
+
+
+    &__privacy{
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 2.4rem;
+            li {
+                font-size: 1.2rem;
+                margin-right: 2.4rem;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+            }
+        }
+        
+}
+
+.social {
+    &__icons {
+        display: flex;
+        justify-content: center;
+
+    }
+    &__icon {
+        margin: 2.4rem;
+        @include breakpoint(medium) {
+            margin: 0;
+            margin-right: 1.6rem;
+            margin-left: 2.4rem;
+        }
+        max-width: 35px;
+    }
+
+
+}

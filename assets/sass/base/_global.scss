@@ -32,8 +32,12 @@ main {
 
 .inner__container {
     max-width: 96rem;
-    margin: 0 auto;
-    margin-top: 4rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    margin-top: 4rem !important;
+    @include breakpoint(medium) {
+        margin: 0 auto;
+    }
 }
 
 .intro { 
@@ -46,6 +50,11 @@ main {
 }
 
 a {
-    color: $color-white;
+    color: $color-link;
     text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }

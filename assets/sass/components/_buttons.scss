@@ -1,10 +1,18 @@
 .btn {
     text-transform: uppercase;
-    background-color: transparent;
-    border: 1px solid $color-secondary;
-    border-radius: 5px;
     padding: 1rem 2.4rem;
+    border: none;
+
     &--primary {
-        
+        background-color: transparent;
+        border: 1px solid $color-secondary;
+        border-radius: 5px;
+    }
+    &--secondary {
+        background-color: $color-tertiary;
+
+        a {
+            color: $color-dark;
+        }
     }
 }
