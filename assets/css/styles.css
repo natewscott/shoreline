@@ -482,7 +482,7 @@ img {
 }
 
 .weather {
-  margin-right: 1.6rem;
+  margin-right: 1rem;
 }
 .weather--icons {
   position: absolute;
@@ -497,7 +497,7 @@ img {
 }
 .weather__info {
   display: flex;
-  gap: 2.4rem;
+  gap: 1.6rem;
   color: rgb(242.8, 245.85, 248.9);
 }
 .weather__detail {
@@ -828,11 +828,13 @@ img {
   bottom: 0;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 4rem;
 }
 @media (min-width: 48rem) {
   .footer--home {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 48rem) {

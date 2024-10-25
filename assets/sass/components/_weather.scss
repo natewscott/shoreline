@@ -1,5 +1,5 @@
 .weather {
-    margin-right: 1.6rem;
+    margin-right: 1rem;
     &--icons {
         position: absolute;
         bottom: 5rem;
@@ -15,7 +15,7 @@
 
    &__info {
     display: flex;
-    gap: 2.4rem;
+    gap: 1.6rem;
     color: $color-white;
    }
 
