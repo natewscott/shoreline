@@ -17,6 +17,16 @@
 
 .nav {
 
+    &__logo--mobile {
+        display: none;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        img {
+            width: 12rem;
+        }
+    }
+
     &__items {
         display: none;
 
@@ -49,7 +59,16 @@
                 margin-right: 0;
             }
         }
-    }   
+    }
+    
+    &--active {
+        .nav__logo--mobile {
+            display: block;
+            position: absolute;
+            z-index: 51;
+            left: 40px
+        }
+    };
 }
 
 .hamburger {
@@ -62,14 +81,39 @@
     border: none;
     cursor: pointer;
     z-index: 60;
+    
     @include breakpoint(medium) {
         display: none;
-       
     }
+
     &__line {
         width: 100%;
         height: 0.2rem;
         background-color: $color-white;
+        transition: all 0.3s ease;
+
+        &.line1 {
+            transform-origin: top left;
+        }
+        
+        &.line3 {
+            transform-origin: bottom left;
+        }
+        
+    }
+    &.open .hamburger__line {
+        height: 0.25rem;
+    }
+    &.open .line1 {
+        transform: rotate(40deg);
+    }
+    
+    &.open .line2 {
+        opacity: 0;
+    }
+    
+    &.open .line3 {
+        transform: rotate(-40deg);
     }
 }
 
@@ -81,8 +125,10 @@
     top: 0;
     left: 0;
     background-color: $color-primary;
+    // background-color: rgba($color-primary, .5);
     width: 100%;
     height: 100vh;
     padding: 2rem;
     z-index: 50;
+
 }

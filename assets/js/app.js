@@ -7,8 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (hamburger && nav && body) {
         // Toggle the menu when clicked
         hamburger.addEventListener('click', () => {
-            nav.classList.toggle('nav--active');
-            body.classList.toggle('no-scroll');
+            hamburger.classList.toggle('open'); // Toggle 'X' animation
+            nav.classList.toggle('nav--active'); // Show/hide nav
+            body.classList.toggle('no-scroll'); // Prevent body scroll
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !expanded);
         });
     }
 

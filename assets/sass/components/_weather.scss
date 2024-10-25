@@ -1,11 +1,16 @@
 .weather {
-    // position: absolute;
-    // bottom: 5rem;
-    // left: 2.5rem;
-    // @include breakpoint(medium) {
-    //     bottom:4rem;
-    //     left: 4rem;
-    // }
+    margin-right: 1.6rem;
+    &--icons {
+        position: absolute;
+        bottom: 5rem;
+        left: 2.5rem; 
+        @include breakpoint(medium) {
+            bottom:4rem;
+            left: 4rem;
+        }  
+    }
+    
+   
     
 
    &__info {
@@ -17,9 +22,18 @@
    &__detail {
     display: flex;
     flex-direction: column;
+    justify-content:flex-end;
     font-size: 2.4rem;
     line-height: 1;
     text-align: center;
+   }
+
+   &__icon {
+    width: 45px;
+    
+    img {
+        object-fit: cover;
+    }
    }
 
 }
