@@ -4,10 +4,13 @@
         position: absolute;
         bottom: 5rem;
         left: 2.5rem; 
-        @include breakpoint(medium) {
-            bottom:4rem;
-            left: 4rem;
-        }  
+        & {
+            @include breakpoint(medium) {
+                bottom:4rem;
+                left: 4rem;
+            }  
+        }
+       
     }
     
    
