@@ -771,6 +771,11 @@ img {
   z-index: -1;
 }
 
+.nav__item a.active {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid rgb(242.8, 245.85, 248.9);
+}
+
 .hero {
   position: relative;
   width: 100%;

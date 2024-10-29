@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const nav = document.querySelector('.nav');
     const body = document.querySelector('body');
+    const navItems = document.querySelectorAll('.nav__item a');
 
     if (hamburger && nav && body) {
         // Toggle the menu when clicked
@@ -14,6 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.setAttribute('aria-expanded', !expanded);
         });
     }
+
+    const currentPage = window.location.pathname.split('/').pop();
+    console.log('Current page:', currentPage); // Debugging line
+
+    // Add 'active' class to the link that matches the current page
+    navItems.forEach(link => {
+        console.log('Checking link href:', link.getAttribute('href')); // Debugging line
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+            console.log('Active class added to:', link); // Debugging line
+        }
+    });
+
 
     // Announcements Modal
     const announcement = document.querySelector('.announcements');
