@@ -41,6 +41,25 @@
         }
     }
 
+    &--hero {
+        display: flex;
+       
+
+        @include breakpoint(medium) {
+            display: none;
+        }
+
+       
+    }
+
+    &--footer {
+        display: none;
+        @include breakpoint(medium) {
+            display: flex;
+        }
+    }
+    
+
     &__header {
         cursor: pointer;
         display: flex;
@@ -52,8 +71,15 @@
 
     &__details {
         display: block;
+
+        p {
+            margin-bottom: 0;
+            text-align: center;
+        }
         a {
-            color: $color-errors;
+            color: $color-errors !important;
+            font-size: 1.6rem !important;
+            text-align: center !important;
         }
     }
 }

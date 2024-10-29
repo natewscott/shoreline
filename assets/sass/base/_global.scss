@@ -41,6 +41,12 @@ main {
             margin: 0 auto;
         }
     }
+
+    &--grid { 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 6rem
+    }
 }
 
 .intro { 

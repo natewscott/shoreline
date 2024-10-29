@@ -372,6 +372,26 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-size: 3.732rem;
+}
+
+h4 {
+  font-size: 2.765rem;
+  line-height: 1.25;
+}
+
+h5 {
+  font-size: 2.304rem;
+}
+
+h6 {
+  font-size: 1.92rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
 button {
   font-size: 1.6rem;
   font-weight: 500;
@@ -382,7 +402,8 @@ button {
 p,
 li {
   font-size: 1.8rem;
-  line-height: 1.6;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
 }
 
 html {
@@ -425,6 +446,11 @@ main__content {
   .inner__container {
     margin: 0 auto;
   }
+}
+.inner__container--grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6rem;
 }
 
 .intro {
@@ -528,6 +554,22 @@ img {
 .announcements[aria-expanded=true] .announcements__open {
   display: inline-block;
 }
+.announcements--hero {
+  display: flex;
+}
+@media (min-width: 48rem) {
+  .announcements--hero {
+    display: none;
+  }
+}
+.announcements--footer {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .announcements--footer {
+    display: flex;
+  }
+}
 .announcements__header {
   cursor: pointer;
   display: flex;
@@ -539,8 +581,14 @@ img {
 .announcements__details {
   display: block;
 }
+.announcements__details p {
+  margin-bottom: 0;
+  text-align: center;
+}
 .announcements__details a {
-  color: #BF1E2E;
+  color: #BF1E2E !important;
+  font-size: 1.6rem !important;
+  text-align: center !important;
 }
 
 .card {
