@@ -13,12 +13,22 @@
         justify-content: space-between;
     }
 
+   
+    &.card--img-right {
+        flex-direction: column-reverse; // Places image on the right
+
+        @include breakpoint(medium) {
+            flex-direction: initial;
+        }
+    }
 
     &__details {
         max-width: 583px;
 
         &--right {
             padding: 2.4rem 0;
+
+
             @include breakpoint(medium) {
                 padding: 2.4rem 0 2.4rem 6.4rem;
             }

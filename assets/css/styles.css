@@ -603,6 +603,14 @@ img {
     justify-content: space-between;
   }
 }
+.card.card--img-right {
+  flex-direction: column-reverse;
+}
+@media (min-width: 48rem) {
+  .card.card--img-right {
+    flex-direction: initial;
+  }
+}
 .card__details {
   max-width: 583px;
 }
