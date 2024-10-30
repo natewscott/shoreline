@@ -637,6 +637,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 2.4rem 2.4rem 4rem 2.4rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 @media (min-width: 48rem) {
   .header {
@@ -645,6 +646,27 @@ img {
 }
 .header__logo {
   width: 16rem;
+}
+.header.visible {
+  position: fixed;
+  transform: translateY(0);
+}
+.header:not(.visible) {
+  transform: translateY(-100%);
+}
+.header.transparent {
+  background-color: transparent;
+}
+.header:not(.transparent) {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header:not(.transparent) .nav__item a {
+  color: #25AAE1;
+}
+.header:not(.transparent) .nav__item a.active {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #25AAE1;
 }
 
 .nav__logo--mobile {

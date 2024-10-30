@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body');
     const navItems = document.querySelectorAll('.nav__item a');
 
+    let lastScrollPosition = window.scrollY;
+    const header = document.querySelector('.header');
+
+    // Set initial state
+    header.classList.add('visible', 'transparent');
+
     if (hamburger && nav && body) {
         // Toggle the menu when clicked
         hamburger.addEventListener('click', () => {
@@ -21,13 +27,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add 'active' class to the link that matches the current page
     navItems.forEach(link => {
-        console.log('Checking link href:', link.getAttribute('href')); // Debugging line
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');
-            console.log('Active class added to:', link); // Debugging line
         }
     });
 
+
+    //Adding header scroll
+    window.addEventListener('scroll', () => {
+        const currentScrollPosition = window.scrollY;
+
+        // Check scroll direction
+        if (currentScrollPosition > lastScrollPosition) {
+            // Scrolling down
+            header.classList.remove('visible'); // Hide header
+        } else {
+            // Scrolling up
+            header.classList.add('visible'); // Show header
+
+            // Add white background if scrolled past a certain point
+            if (currentScrollPosition > 100) {
+                header.classList.remove('transparent');
+            } else {
+                header.classList.add('transparent'); // Make header transparent again
+            }
+        }
+
+        lastScrollPosition = currentScrollPosition;
+    });
 
     // Announcements Modal
     const announcement = document.querySelector('.announcements');
