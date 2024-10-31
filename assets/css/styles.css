@@ -638,6 +638,53 @@ img {
   margin-bottom: 2.4rem;
 }
 
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.image-slider__track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2.4rem;
+  width: calc(100% + 24px);
+}
+.image-slider__slide {
+  flex: 0 0 350px;
+  max-width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.image-slider__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.image-slider__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(242.8, 245.85, 248.9, 0.8);
+  border: none;
+  color: #002E5F;
+  font-size: 2.6rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-slider__control--prev {
+  left: 1rem;
+}
+.image-slider__control--next {
+  right: 1rem;
+}
+
 .header {
   position: absolute;
   z-index: 50;
@@ -942,6 +989,15 @@ img {
 .hero__links--icon img {
   width: 100%;
   height: auto;
+}
+
+.course-content__learn {
+  padding-left: 3rem;
+}
+.course-content__learn li {
+  list-style: disc;
+  margin-bottom: 0;
+  line-height: 1.25;
 }
 
 .footer {

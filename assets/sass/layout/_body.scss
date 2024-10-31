@@ -1,0 +1,10 @@
+.course-content {
+    &__learn {
+        padding-left: 3rem;
+        li {
+            list-style: disc;
+            margin-bottom: 0;
+            line-height: 1.25;
+        }
+    }
+}
