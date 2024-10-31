@@ -655,6 +655,12 @@ img {
 .header__logo {
   width: 16rem;
 }
+.header__logo--white {
+  display: block;
+}
+.header__logo--normal {
+  display: none;
+}
 .header.visible {
   position: fixed;
   transform: translateY(0);
@@ -665,9 +671,21 @@ img {
 .header.transparent {
   background-color: transparent;
 }
+.header.transparent .header__logo--white {
+  display: block;
+}
+.header.transparent .header__logo--normal {
+  display: none;
+}
 .header:not(.transparent) {
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header:not(.transparent) .header__logo--white {
+  display: none;
+}
+.header:not(.transparent) .header__logo--normal {
+  display: block;
 }
 .header:not(.transparent) .nav__item a {
   color: #25AAE1;
@@ -675,6 +693,9 @@ img {
 .header:not(.transparent) .nav__item a.active {
   padding-bottom: 1.6rem;
   border-bottom: 1px solid #25AAE1;
+}
+.header:not(.transparent) .hamburger__line {
+  background-color: #002E5F;
 }
 
 .nav__logo--mobile {
@@ -785,9 +806,10 @@ img {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100%; /* Fallback for Safari mobile */
+  min-height: 100vh; /* Ensure full viewport height */
   padding: 2rem;
-  z-index: 50;
+  z-index: 10; /* Ensure it displays above other elements */
   color: rgb(242.8, 245.85, 248.9);
 }
 .nav--active .nav__items::before {
@@ -798,7 +820,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  z-index: -1; /* Place the overlay below text but above the background */
 }
 
 .nav__item a.active {
