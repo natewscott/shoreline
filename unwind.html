@@ -23,12 +23,14 @@
             
         </div>
        
-     <nav class="nav">
+     <nav class="nav" id="nav-menu">
+        <!-- <img src="imgs/misc/index-bg.jpg" alt=""> -->
         <div class="nav__logo--mobile">
             <a href="index.html">
                 <img src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
         </div>
+        <img src="imgs/misc/index-bg.jpg" alt="Background image" class="nav__background">
         <ul class="nav__items">
             <li class="nav__item">
                 <a href="play.html">
@@ -62,15 +64,17 @@
             </li>
         </ul>
      </nav>
-     <button class="hamburger" id="hamburger">
+     <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open navigation menu" aria-controls="nav-menu">
         <span class="hamburger__line line1"></span>
         <span class="hamburger__line line2"></span>
         <span class="hamburger__line line3"></span>
+        <span class="hamburger__x">X</span> <!-- Close X element -->
      </button>
     </header>
     <main class="main">
         <section class="hero" >
             <video autoplay loop muted playsinline preload="auto" class="hero__vid">
+                <source src="imgs/videos/unwind.webm" type="video/webm">
                 <source src="imgs/videos/play.mp4" type="video/mp4">
             </video>
             <div class="hero__titles">
@@ -109,6 +113,64 @@
                     </p>
                 </article>
                 <section class="cards">
+                    <article class="card card--img-right">
+                        <div class="card__details card__details--right">
+                            <h2>
+                                Bistro Menu
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quidem doloribus voluptatem ad porro adipisci. Nam tempore illum eos consequatur aspernatur ea ipsa, perferendis ducimus quasi, consectetur in? Quaerat, cumque.
+                            </p>
+                            <button class="btn btn--secondary">
+                                <a href="sailing.html">
+                                    Explore
+                                </a>
+                                
+                            </button>
+                        </div> 
+                        <div class="card__img">
+                            <img src="imgs/cards/a_close_up_of_sliders.jpg" alt="Woman sailing a small boat with a bright yellow sail on a calm lake, with a lakeside clubhouse and docks in the background." title="Woman Sailing on Lake with Bright Yellow Sailing">
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__img">
+                            <img src="imgs/cards/a_small_boat_filled_with_ice_and_drinks.jpg" alt="Group of people practicing yoga on stand-up paddleboards (SUP) on a calm lake, stretching their legs while balancing on the boards." title="Group SUP Yoga on Lake">
+                        </div>
+                        <div class="card__details card__details--left">
+                            <h2>
+                                Drinks Menu
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quidem doloribus voluptatem ad porro adipisci. Nam tempore illum eos consequatur aspernatur ea ipsa, perferendis ducimus quasi, consectetur in? Quaerat, cumque.
+                            </p>
+                            <button class="btn btn--secondary">
+                                <a href="#">
+                                    Explore
+                                </a>
+                                
+                            </button>
+                        </div> 
+                        
+                    </article>
+                    <article class="card card--img-right">
+                        <div class="card__details card__details--right">
+                            <h2>
+                                Special Events
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quidem doloribus voluptatem ad porro adipisci. Nam tempore illum eos consequatur aspernatur ea ipsa, perferendis ducimus quasi, consectetur in? Quaerat, cumque.
+                            </p>
+                            <button class="btn btn--secondary">
+                                <a href="#">
+                                    Explore
+                                </a>
+                                
+                            </button>
+                        </div> 
+                        <div class="card__img">
+                            <img src="imgs/cards/a_woman_on_surfboard_for_event_photos.jpg" alt="Woman sailing a small boat with a bright yellow sail on a calm lake, with a lakeside clubhouse and docks in the background." title="Woman Sailing on Lake with Bright Yellow Sailing">
+                        </div>
+                    </article>
                 </section>
             </section>
             <footer>
