@@ -45,13 +45,14 @@
         position: absolute;
         top: 50%;
         left: 2.4rem;
-        z-index: 2;
+        z-index: 200;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         & {
             @include breakpoint(medium) {
                 left: 4rem;
+                z-index: 2;
             }
         }
     
