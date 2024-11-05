@@ -1104,6 +1104,30 @@ img {
   display: none;
 }
 
+.image__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* Define the placement of each image */
+.image__grid img:nth-child(1) {
+  grid-column: 1/-1; /* Full width */
+}
+
+.image__grid img:nth-child(2) {
+  grid-column: 1; /* Left column */
+}
+
+.image__grid img:nth-child(3) {
+  grid-column: 2; /* Right column */
+}
+
+.image__grid img:nth-child(4) {
+  grid-column: 1/-1; /* Full width */
+}
+
 .footer {
   display: flex;
   flex-direction: column;
