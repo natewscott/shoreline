@@ -7,14 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroLinks = document.querySelectorAll('.hero__links'); // Select all hero links
 
 
-    //Slider
-    const track = document.querySelector('.image-slider__track');
-    const slides = Array.from(track.children);
-    const nextButton = document.querySelector('.image-slider__control--next');
-    const prevButton = document.querySelector('.image-slider__control--prev');
-    const slideWidth = slides[0].getBoundingClientRect().width;
-    let currentIndex = 0;
-
     let lastScrollPosition = window.scrollY;
     const header = document.querySelector('.header');
 
@@ -110,6 +102,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    //Slider
+    const track = document.querySelector('.image-slider__track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.image-slider__control--next');
+    const prevButton = document.querySelector('.image-slider__control--prev');
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    let currentIndex = 0;
+
     // Arrange slides next to each other
     slides.forEach((slide, index) => {
         slide.style.left = slideWidth * index + 'px';
@@ -138,4 +139,28 @@ document.addEventListener('DOMContentLoaded', () => {
             moveToSlide(currentIndex -1);
         }
     });
+
+    //Drop Down menu for session info
+    const sessionSelection = document.getElementById('session-selection');
+    const dateLists = document.querySelectorAll('.session-info__dates');
+
+    sessionSelection.addEventListener('change', () => {
+        const selectedSession = sessionSelection.value;
+
+        // Hide all date lists
+        dateLists.forEach(list => {
+            list.style.display = 'none';
+            list.setAttribute('aria-hidden', 'true');
+        });
+
+        // Show the relevant date list if a session is selected
+        if (selectedSession) {
+            const selectedList = document.querySelector(`.session-info__dates[data-session="${selectedSession}"]`);
+            if (selectedList) {
+                selectedList.style.display = 'block';
+                selectedList.setAttribute('aria-hidden', 'false');
+            }
+        }
+    });
+
 });

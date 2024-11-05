@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoreline Lake - Introductory Sailing</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Styles -->
-      <!-- CSS Reset -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
-     <link rel="stylesheet" href="assets/css/styles.css">
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- Styles -->
+       <!-- CSS Reset -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
+      <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
+        <div class="header__logo header__logo--white">
             <a href="index.html">
                 <img  src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
-            
         </div>
-       
+        <div class="header__logo header__logo--normal">
+            <a href="index.html">
+                <img  src="imgs/misc/sl_logo.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
      <nav class="nav">
+       
         <div class="nav__logo--mobile">
             <a href="index.html">
                 <img src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
         </div>
+        <img src="imgs/misc/index-bg.jpg" alt="Background image" class="nav__background">
         <ul class="nav__items">
             <li class="nav__item">
                 <a href="play.html">
@@ -60,154 +68,342 @@
             </li>
         </ul>
      </nav>
-     <button class="hamburger" id="hamburger">
+     <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open navigation menu" aria-controls="nav-menu">
         <span class="hamburger__line line1"></span>
         <span class="hamburger__line line2"></span>
         <span class="hamburger__line line3"></span>
+        <span class="hamburger__x">X</span> <!-- Close X element -->
      </button>
     </header>
-    <main class="main">
-        <section class="hero" >
-            <img src="imgs/hero/girl_with_a_tippped_over_boat.png" alt=" " class="hero__vid">
-           
-            <div class="hero__titles">
-                <h1>
-                   introductory sailing
-                </h1>
-                <!-- <span class="hero__subtitle">
-                    all ages, all skill levels
-                </span> -->
-            </div>
-            <article class="weather--icons">
-                <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
+
+<main class="main">
+    <section class="hero" >
+        <img src="imgs/hero/girl_with_a_tippped_over_boat.png" alt=" " class="hero__vid">
+        <div class="hero__titles">
+            <h1>
+                introductory sailing
+            </h1>
+            <!-- <span class="hero__subtitle">
+                all ages, all skill levels
+            </span> -->
+        </div>
+        <article class="weather--icons">
+            <ul class="weather__info">
+                <li class="weather__detail">
+                    <span class="weather__icon">
+                        <img src="imgs/misc/Partly-cloudy.png" alt="">
+                    </span>
+                    80&deg;
+                </li>
+                <li class="weather__detail">
+                    <span class="weather__icon">
+                        <img src="imgs/misc/Wind.png" alt="">
+                    </span>
+                    12KT
+                </li>
+            </ul>
+           </article>
+    </section>
+    <section class="main__content">
+        <section class="inner__container inner__container--grid">
+        
+            <article class="content course-content">
+                <h2>
+                    Introductory Sailing
+                </h2>
+                <p>
+                    Here's your chance to take the helm and “sail away” in your own 14' long sloop!
+                </p>
+                <p>
+                    Appropriate for ages 14 and up, this course teaches all the basics needed to get you out on the water, safely maneuvering your sailboat (a Capri dinghy) around the Lake. In addition, after successfully completing the course, students receive certification so they can rent boats on their own.
+                </p>
+                <p>
+                    Tacking and jibing (turning), sail trim, nomenclature, knots, and water safety are among the subjects covered in this fast-paced and exhilarating course taught by experienced, certified instructors
+                </p>
+                <p>
+                    And, the price of the Level I course includes a 1-hour private lesson, which you can schedule within the 2 weeks following completion of the class.
+                </p>
+                <h6>
+                    You'll learn the following skills:
+                </h6>
+                <ul class="course-content__learn">
+                    <li> Basic Knowledge of Weather Conditions, Shallow Areas & Hazards</li>
+                    <li>Basic Vocabulary, Wind Awareness, Safety Position</li>
+                    <li>Basic Steering, Tacking, Controlled Jibe</li>
+                    <li>Sail Trim - Sheeting/Trimming In & Out, Going Straight</li>
+                    <li>Right of Way, Launching & Docking, and more…</li>
                 </ul>
-               </article>
-        </section>
-        <section class="main__content">
-            <section class="inner__container inner__container--grid">
-                <article class="content course-content">
-                    <h2>
-                        Introductory Sailing
-                    </h2>
-                    <p>
-                        Here's your chance to take the helm and “sail away” in your own 14' long sloop!
-                    </p>
-                    <p>
-                        Appropriate for ages 14 and up, this course teaches all the basics needed to get you out on the water, safely maneuvering your sailboat (a Capri dinghy) around the Lake. In addition, after successfully completing the course, students receive certification so they can rent boats on their own.
-                    </p>
-                    <p>
-                        Tacking and jibing (turning), sail trim, nomenclature, knots, and water safety are among the subjects covered in this fast-paced and exhilarating course taught by experienced, certified instructors
-                    </p>
-                    <p>
-                        And, the price of the Level I course includes a 1-hour private lesson, which you can schedule within the 2 weeks following completion of the class.
-                    </p>
-                    <h6>
-                        You'll learn the following skills:
-                    </h6>
-                    <ul class="course-content__learn">
-                        <li> Basic Knowledge of Weather Conditions, Shallow Areas & Hazards</li>
-                        <li>Basic Vocabulary, Wind Awareness, Safety Position</li>
-                        <li>Basic Steering, Tacking, Controlled Jibe</li>
-                        <li>Sail Trim - Sheeting/Trimming In & Out, Going Straight</li>
-                        <li>Right of Way, Launching & Docking, and more…</li>
-                    </ul>
-                    <article class="image-slider mb-giant mt-giant">
-                        <!-- <div class="image-slider__wrapper"> -->
-                        <div class="image-slider__track">
-                            <div class="image-slider__slide">
-                                <img src="imgs/slider/a_saling_instructor_showing_students_rope_knots.jpg" alt="">
-                            </div>
-                            <div class="image-slider__slide">
-                                <img src="imgs/slider/a_group_of_people_in_sail_boats_learning_at_the_dock.jpg" alt="">
-                            </div>
-                            <div class="image-slider__slide">
-                                <img src="imgs/slider/a_saling_instructor_in_a_boat_talking_to_a_student.jpg" alt="">
-                            </div>
-                            <div class="image-slider__slide">
-                                <img src="imgs/slider/a_saling_instructor_talking_to_students_on_the_dock.jpg" alt="">
-                            </div>
+                <article class="image-slider mb-giant mt-giant">
+                    <!-- <div class="image-slider__wrapper"> -->
+                    <div class="image-slider__track">
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/a_saling_instructor_showing_students_rope_knots.jpg" alt="">
                         </div>
-                            <button class="image-slider__control image-slider__control--prev" aria-label="Previous slide">
-                                <
-                            </button>
-                            <button class="image-slider__control image-slider__control--next" aria-label="Next slide">
-                                >
-                            </button>
-                        
-                    </article>
-                    <h6>
-                        Certification Options
-                    </h6>
-                    <p>
-                        Completion of Introductory Sailing course and the accompanying 1-hour private lesson awards a rental card which allows you to rent the Catalina Capri 14.2 sailboats on Shoreline Lake. If you're looking to continue developing your sailing knowledge and skills, the next step is earning your internationally recognized U.S. Sailing Small Boat Sailor certification.
-                    </p>
-                    <p>
-                        U.S. Sailing certification requires completion of the Intermediate Sailing course. We offer a package which includes Introductory Sailing and Intermediate Sailing (including the 1-hour private lesson already included with each of these courses) plus an additional 4 hours of rental for a total of $1,150.
-                    </p>
-                    <h6>
-                        What to Bring
-                    </h6>
-                    <p>
-                        Students should bring comfortable clothes, a jacket or layers, a towel and change of clothes, lots of sun protection, a lanyard to secure your glasses, a bottle of water, and shoes that stay on your feet.
-                    </p>
-                    <p>
-                       <strong>Important:</strong> Please arrive 10-15 minutes before your class to check in.
-                    </p>
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/a_group_of_people_in_sail_boats_learning_at_the_dock.jpg" alt="">
+                        </div>
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/a_saling_instructor_in_a_boat_talking_to_a_student.jpg" alt="">
+                        </div>
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/a_saling_instructor_talking_to_students_on_the_dock.jpg" alt="">
+                        </div>
+                    </div>
+                        <button class="image-slider__control image-slider__control--prev" aria-label="Previous slide">
+                            <
+                        </button>
+                        <button class="image-slider__control image-slider__control--next" aria-label="Next slide">
+                            >
+                        </button>
+                    
                 </article>
-              <aside>
-                <h4>Sailing: Level 1 $149</h4>
-                <hr>
-              </aside>
-            </section>
-            <footer class="footer">
-                <article class="footer__user-actions">
-                    <div>
-                        <a href="" class="footer__newsletter">
-                            Subscribe <br>
-                            <span>
-                                to our newsletter
-                            </span>
-                        </a>
+                <h6>
+                    Certification Options
+                </h6>
+                <p>
+                    Completion of Introductory Sailing course and the accompanying 1-hour private lesson awards a rental card which allows you to rent the Catalina Capri 14.2 sailboats on Shoreline Lake. If you're looking to continue developing your sailing knowledge and skills, the next step is earning your internationally recognized U.S. Sailing Small Boat Sailor certification.
+                </p>
+                <p>
+                    U.S. Sailing certification requires completion of the Intermediate Sailing course. We offer a package which includes Introductory Sailing and Intermediate Sailing (including the 1-hour private lesson already included with each of these courses) plus an additional 4 hours of rental for a total of $1,150.
+                </p>
+                <h6>
+                    What to Bring
+                </h6>
+                <p>
+                    Students should bring comfortable clothes, a jacket or layers, a towel and change of clothes, lots of sun protection, a lanyard to secure your glasses, a bottle of water, and shoes that stay on your feet.
+                </p>
+                <p>
+                   <strong>Important:</strong> Please arrive 10-15 minutes before your class to check in.
+                </p>
+            </article>
+            <aside class="class-info">
+                <div class="class-info__header">
+                    <h4>Sailing: Level 1 $510</h4>
+                    <hr>
+                    <p>
+                        
+                            2 day class 9:00am-1:00pm
+                        
+                    </p>
+                    <p>
+                     
+                        + 1 hour private lesson
+                     
+                    </p>
+                    <hr>
+                </div>
+                <div class="class-info__body form">
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="session-selection" class="form__label">Select a session</label>
+                        <select name="sessions" id="session-selection" aria-controls="session-dates" aria-labelledby="class-title">
+                            <option value=""> 
+                                -- choose a session --
+                            </option>
+                            <option value="spring">
+                               Spring 2025
+                            </option>
+                            <option value="summer">
+                                Summer 2025
+                            </option>
+                            <option value="fall">
+                                Fall 2025
+                            </option>
+                        </select>
+                        </div>
                     </div>
                     
-                    <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-                <article class="footer__privacy">
-                    <ul>
-                        <li>
-                            <a href="">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="">Terms of Use</a>
-                        </li>
-                    </ul>
-                </article>
-            </footer>
+                     <div class="session-info" id="session-dates" aria-live="polite">
+                        <ul class="session-info__dates" id="spring" data-session="spring" aria-hidden="true">
+                            <li class="session-info__date">
+                                February 1-2
+                            </li>
+                            <li class="session-info__date">
+                                February 8-9
+                            </li>
+                            <li class="session-info__date">
+                                February 15-16
+                            </li>
+                            <li class="session-info__date">
+                                February 22-23
+                            </li>
+                            <li class="session-info__date">
+                                March 1-2
+                            </li>
+                            <li class="session-info__date">
+                                March 8-9
+                            </li>
+                            <li class="session-info__date">
+                                March 15-16
+                            </li>
+                            <li class="session-info__date">
+                                March 22-23
+                            </li>
+                            <li class="session-info__date">
+                                March 29-30
+                            </li>
+                            <li class="session-info__date">
+                                April 5-6
+                            </li>
+
+                            <li class="session-info__date">
+                                April 12-13
+                            </li>
+                            <li class="session-info__date">
+                                April 19-20
+                            </li>
+                            <li class="session-info__date">
+                                April 26-27
+                            </li>
+                            <li class="session-info__date">
+                                May 3-4
+                            </li>
+                            <li class="session-info__date">
+                                May 10-11
+                            </li>
+                            <li class="session-info__date">
+                                May 17-18
+                            </li>
+                            <li class="session-info__date">
+                                May 24-25
+                            </li>
+
+                        </ul>
+                        <ul class="session-info__dates" id="summer" data-session="summer" aria-hidden="true">
+                            <li class="session-info__date">
+                                May 31-June 1
+                            </li>
+                            <li class="session-info__date">
+                                June 7-8
+                            </li>
+                            <li class="session-info__date">
+                                June 14-15
+                            </li>
+                            <li class="session-info__date">
+                                June 21-22
+                            </li>
+                            <li class="session-info__date">
+                                June 28-29
+                            </li>
+                            <li class="session-info__date">
+                                July 5-6
+                            </li>
+                            <li class="session-info__date">
+                                July 12-13
+                            </li>
+                            <li class="session-info__date">
+                                July 19-20
+                            </li>
+                            <li class="session-info__date">
+                                July 26-27
+                            </li>
+                            <li class="session-info__date">
+                                August 2-3
+                            </li>
+                            <li class="session-info__date">
+                                August 9-10
+                            </li>
+                            <li class="session-info__date">
+                                August 16-17
+                            </li>
+                            <li class="session-info__date">
+                                August 23-24
+                            </li>
+                            <li class="session-info__date">
+                                August 30-31
+                            </li>
+                            <li class="session-info__date">
+                                September 6-7
+                            </li>
+                            <li class="session-info__date">
+                                September 13-14
+                            </li>
+                            <li class="session-info__date">
+                                September 20-21
+                            </li>
+                        </ul>
+                        <ul class="session-info__dates" id="fall" data-session="fall" aria-hidden="true">
+                            <li class="session-info__date">
+                                September 27-28
+                            </li>
+                            <li class="session-info__dates">
+                                October 4-5
+                            </li>
+                            <li class="session-info__date">
+                                October 11-12
+                            </li>
+                            <li class="session-info__date">
+                                October 18-19
+                            </li>
+                            <li class="session-info__date">
+                                October 25-26
+                            </li>
+                            <li class="session-info__date">
+                                November 1-2
+                            </li>
+                            <li class="session-info__date">
+                                November 8-9
+                            </li>
+                            <li class="session-info__date">
+                                November 15-16
+                            </li>
+                            <li class="session-info__date">
+                                November 22-23
+                            </li>
+                            <li class="session-info__date">
+                                December 6-7
+                            </li>
+                            <li class="session-info__date">
+                                December 13-14
+                            </li>
+                        </ul>
+                    </div> 
+                    <button class="btn btn--primary">
+                        Register now
+                    </button>
+                </div>
+               
+
+              </aside> 
         </section>
-    </main>
-    <script src="assets/js/app.js"></script>
+        <footer class="footer">
+            <article class="footer__user-actions">
+                <div>
+                    <a href="" class="footer__newsletter">
+                        Subscribe <br>
+                        <span>
+                            to our newsletter
+                        </span>
+                    </a>
+                </div>
+                
+                <ul class="social__icons">
+                    <li class="social__icon">
+                        <a href="">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="footer__privacy">
+                <ul>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Terms of Use</a>
+                    </li>
+                </ul>
+            </article>
+        </footer>
+    </section>
+</main>
+<!-- Javascript  -->
+<script src="assets/js/app.js"></script>
 </body>
 </html>

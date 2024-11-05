@@ -44,8 +44,34 @@ main {
 
     &--grid { 
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 6rem
+        gap: 6rem;
+
+        .content {
+            order: 2; /* Ensures content is in the first column */
+        }
+    
+        .class-info {
+            
+            order: 1; /* Ensures aside is in the second column */
+
+        }
+        grid-template-columns: 1fr;
+        @include breakpoint(medium) {
+            grid-template-columns: 2fr 1fr;
+
+            .content {
+                order: 1; /* Ensures content is in the first column */
+            }
+        
+            .class-info {
+                
+                order: 2; /* Ensures aside is in the second column */
+    
+            }
+        }
+
+        
+       
     }
 }
 

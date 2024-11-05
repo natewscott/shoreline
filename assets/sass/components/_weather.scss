@@ -4,6 +4,7 @@
         position: absolute;
         bottom:0;
         left: 2.5rem; 
+        z-index: 10;
         & {
             @include breakpoint(medium) {
                 bottom:4rem;

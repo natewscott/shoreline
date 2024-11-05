@@ -449,8 +449,25 @@ main__content {
 }
 .inner__container--grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   gap: 6rem;
+  grid-template-columns: 1fr;
+}
+.inner__container--grid .content {
+  order: 2; /* Ensures content is in the first column */
+}
+.inner__container--grid .class-info {
+  order: 1; /* Ensures aside is in the second column */
+}
+@media (min-width: 48rem) {
+  .inner__container--grid {
+    grid-template-columns: 2fr 1fr;
+  }
+  .inner__container--grid .content {
+    order: 1; /* Ensures content is in the first column */
+  }
+  .inner__container--grid .class-info {
+    order: 2; /* Ensures aside is in the second column */
+  }
 }
 
 .intro {
@@ -469,6 +486,71 @@ a {
 img {
   width: 100%;
   height: auto;
+}
+
+.form--modal {
+  background-color: white;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-bottom: 2.4rem;
+  border-radius: 10px;
+}
+.form input[type=text],
+.form input[type=tel],
+.form input[type=file],
+.form input[type=date],
+.form input[type=email],
+.form input[type=password],
+.form textarea,
+.form select {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+.form__fieldset {
+  border: 1px solid #101820;
+  border-radius: 5px;
+  padding: 3.5rem 1.6rem;
+}
+.form__legend {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.form__label {
+  color: #101820;
+  font-size: 1.6rem;
+}
+.form__label--req::after {
+  content: "*";
+  color: #BF1E2E;
+}
+.form__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  gap: 2rem;
+}
+.form__row .form__item input[type=text],
+.form__row .form__item input[type=tel],
+.form__row .form__item input[type=file],
+.form__row .form__item input[type=date],
+.form__row .form__item input[type=email],
+.form__row .form__item input[type=password],
+.form__row .form__item textarea,
+.form__row .form__item select {
+  width: 100%;
+}
+.form__buttons-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 3.2rem;
+}
+@media (min-width: 48rem) {
+  .form__buttons-group {
+    flex-direction: row;
+  }
 }
 
 .btn {
@@ -495,6 +577,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 2.5rem;
+  z-index: 10;
 }
 @media (min-width: 48rem) {
   .weather--icons {
@@ -954,6 +1037,7 @@ img {
 }
 .hero__subtitle {
   font-size: 3.981rem;
+  line-height: 1.2;
   z-index: 2;
 }
 .hero__links {
@@ -1002,6 +1086,22 @@ img {
   list-style: disc;
   margin-bottom: 0;
   line-height: 1.25;
+}
+
+.class-info__header hr {
+  margin: 1rem 0 2.4rem 0;
+  border-top: 1.5px solid #25AAE1;
+}
+.class-info__header hr:last-of-type {
+  margin-top: 2.4rem;
+}
+.class-info p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.session-info__dates {
+  display: none;
 }
 
 .footer {
