@@ -4,6 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.nav');
     const body = document.querySelector('body');
     const navItems = document.querySelectorAll('.nav__item a');
+    const heroLinks = document.querySelectorAll('.hero__links'); // Select all hero links
+
+
+    //Slider
+    const track = document.querySelector('.image-slider__track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.image-slider__control--next');
+    const prevButton = document.querySelector('.image-slider__control--prev');
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    let currentIndex = 0;
 
     let lastScrollPosition = window.scrollY;
     const header = document.querySelector('.header');
@@ -19,6 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
             body.classList.toggle('no-scroll'); // Prevent body scroll
             const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
             hamburger.setAttribute('aria-expanded', !expanded);
+
+            // Toggle the active class on hero links
+            heroLinks.forEach(link => {
+                link.classList.toggle('active');
+            });
         });
     }
 
@@ -95,4 +110,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    // Arrange slides next to each other
+    slides.forEach((slide, index) => {
+        slide.style.left = slideWidth * index + 'px';
+    });
+
+    //Move to the selcted slide
+    const moveToSlide = (index) => {
+        track.style.transform = 'translateX(-' + slideWidth * index + 'px)';
+        currentIndex = index;
+    };
+
+    //Show the next slide
+    nextButton.addEventListener('click', () => {
+        if (currentIndex === slides.length - 1) {
+            moveToSlide(0); //Loop back to start
+        } else {
+            moveToSlide(currentIndex + 1);
+        }
+    });
+
+    // Show the prev slide
+    prevButton.addEventListener('click', () => {
+        if (currentIndex === 0) {
+            moveToSlide(slides.length -1);
+        }else {
+            moveToSlide(currentIndex -1);
+        }
+    });
 });

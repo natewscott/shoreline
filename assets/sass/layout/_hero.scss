@@ -12,7 +12,8 @@
     }
     position: relative;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
+    height: 100dvh; /* Ensures hero section fills only the viewport */
     
     &--home {
         position: relative;
@@ -49,6 +50,10 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+
+        &.active { 
+            display: none;
+        }
         & {
             @include breakpoint(medium) {
                 left: 4rem;
@@ -82,3 +87,5 @@
     }
     }
 } 
+
+
