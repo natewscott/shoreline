@@ -17,19 +17,24 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
+        <div class="header__logo header__logo--white">
             <a href="index.html">
                 <img  src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
-            
         </div>
-       
+        <div class="header__logo header__logo--normal">
+            <a href="index.html">
+                <img  src="imgs/misc/sl_logo.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
      <nav class="nav">
+       
         <div class="nav__logo--mobile">
             <a href="index.html">
                 <img src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
         </div>
+        <img src="imgs/misc/index-bg.jpg" alt="Background image" class="nav__background">
         <ul class="nav__items">
             <li class="nav__item">
                 <a href="play.html">
@@ -63,10 +68,11 @@
             </li>
         </ul>
      </nav>
-     <button class="hamburger" id="hamburger">
+     <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open navigation menu" aria-controls="nav-menu">
         <span class="hamburger__line line1"></span>
         <span class="hamburger__line line2"></span>
         <span class="hamburger__line line3"></span>
+        <span class="hamburger__x">X</span> <!-- Close X element -->
      </button>
     </header>
     <main class="main">
@@ -123,12 +129,12 @@
                         </button>
                     </div> 
                     <div class="card__img">
-                        <img src="imgs/cards/woman-saling-in-lake.jpg" alt="Woman sailing a small boat with a bright yellow sail on a calm lake, with a lakeside clubhouse and docks in the background." title="Woman Sailing on Lake with Bright Yellow Sailing">
+                        <img src="imgs/cards/woman-saling-in-lake.jpg" alt="Three people sailing a boat in the middle of the lake." title="Three people sailing a boat in the middle of the lake with a orange and white sail.">
                     </div>
                 </article>
                 <article class="card">
                     <div class="card__img">
-                        <img src="imgs/cards/group-sup-yoga-lake.jpg" alt="Group of people practicing yoga on stand-up paddleboards (SUP) on a calm lake, stretching their legs while balancing on the boards." title="Group SUP Yoga on Lake">
+                        <img src="imgs/cards/three_people_in_a_sail_boat_on_a_lake.jpg" alt="Group of people practicing yoga on stand-up paddleboards (SUP) on a calm lake, stretching their legs while balancing on the boards." title="Group SUP Yoga on Lake">
                     </div>
                     <div class="card__details card__details--left">
                         <h2>

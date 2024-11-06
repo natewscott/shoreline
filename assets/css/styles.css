@@ -370,6 +370,7 @@ h1 {
 h2 {
   font-size: 4.479rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 h3 {
@@ -818,7 +819,12 @@ img {
   display: block;
 }
 .header:not(.transparent) .nav__item a {
-  color: #25AAE1;
+  color: rgb(242.8, 245.85, 248.9);
+}
+@media (min-width: 48rem) {
+  .header:not(.transparent) .nav__item a {
+    color: #25AAE1;
+  }
 }
 .header:not(.transparent) .nav__item a.active {
   padding-bottom: 1.6rem;

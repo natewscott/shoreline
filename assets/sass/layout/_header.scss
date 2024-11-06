@@ -57,7 +57,11 @@
         }
 
         .nav__item a {
-            color: $color-secondary;
+            color: $color-white;
+
+            @include breakpoint(medium) {
+                color: $color-secondary;
+            }
         }
 
         .nav__item a.active {
