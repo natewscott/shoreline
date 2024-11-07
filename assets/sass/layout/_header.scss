@@ -60,7 +60,7 @@
             color: $color-white;
 
             @include breakpoint(medium) {
-                color: $color-secondary;
+                color: $color-primary;
             }
         }
 

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoreline Lake - Bistro Menu</title>
+
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- Styles -->
+       <!-- CSS Reset -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo header__logo--white">
+            <a href="index.html">
+                <img  src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
+        <div class="header__logo header__logo--normal">
+            <a href="index.html">
+                <img  src="imgs/misc/sl_logo.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
+     <nav class="nav">
+       
+        <div class="nav__logo--mobile">
+            <a href="index.html">
+                <img src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
+        <img src="imgs/misc/index-bg.jpg" alt="Background image" class="nav__background">
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a href="play.html">
+                    Play
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="learn.html">
+                    Learn
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="unwind.html">
+                    Unwind
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="events.html">
+                    Events
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+     </nav>
+     <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open navigation menu" aria-controls="nav-menu">
+        <span class="hamburger__line line1"></span>
+        <span class="hamburger__line line2"></span>
+        <span class="hamburger__line line3"></span>
+        <span class="hamburger__x">X</span> <!-- Close X element -->
+     </button>
+    </header>
+
+<main class="main">
+    <section class="hero" >
+        <img src="imgs/hero/a_batch_of_chocolate_chip_cookies.jpg" alt="A big batch of chocolate chip cookies on display." title="A big batch of chocolate chip cookies on display." class="hero__vid">
+        <div class="hero__titles">
+            <h1>
+                bistro menu
+            </h1>
+            <!-- <span class="hero__subtitle">
+                all ages, all skill levels
+            </span> -->
+        </div>
+        <article class="weather--icons">
+            <ul class="weather__info">
+                <li class="weather__detail">
+                    <span class="weather__icon">
+                        <img src="imgs/misc/Partly-cloudy.png" alt="">
+                    </span>
+                    80&deg;
+                </li>
+                <li class="weather__detail">
+                    <span class="weather__icon">
+                        <img src="imgs/misc/Wind.png" alt="">
+                    </span>
+                    12KT
+                </li>
+            </ul>
+           </article>
+    </section>
+    <section class="main__content">
+        <section class="inner__container inner__container--grid">
+        
+            <article class="content bistro bistro__menu">
+                <h2>
+                    Bistro Menu
+                </h2>
+                <p>
+                    Available for take-out, indoor or outdoor seating. Have a picnic in the park or aboard a boat.
+                </p>
+                <h3>
+                    Start of the day
+                </h3>
+                <hr>
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Sesame Bagel
+                    </li>
+                    <li class="bistro__item">
+                        Sesame Bagel with Cream Cheese
+                    </li>
+                    <li class="bistro__item">
+                        Homemade Granola Yogurt Parfait
+                        <em class="bistro__item--description">
+                            Served with Apple Compote
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Quiche du Jour
+                        <em class="bistro__item--description">
+                            Served with Roasted Beets & Greek Salad
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Smoked Salmon Bagel Sandwich <span class="food-consumption"> *</span>
+                        <em class="bistro__item--description">
+                            Served with Kale Slaw and Homemade Kettle Chips
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Avocado Toast
+                        <em class="bistro__item--description">
+                            Served with Garden Veggie salad & granola yogurt parfait
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Breakfast Sandwich on English muffin
+                        <em class="bistro__item--description">
+                            Served with Yogurt Granola Parfait and cottage potatoes
+                        </em>
+                    </li>
+
+                    <li class="bistro__item">
+                        Choice of:
+                    </li>
+
+                    <li class="bistro__item">
+                        Shoreline Breakfast
+                        <em class="bistro__item--description">
+                            Choice of eggs, Applewood smoked bacon or chicken apple sausage, multi-grain toast. Served with Yogurt Granola Parfait and cottage potatoes
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Eggs Benedict
+                        <em class="bistro__item--description">
+                            Poached eggs, Canadian Bacon, Lemon Hollandaise over English muffin. Served with Yogurt Granola Parfait and cottage potatoes <span class="food-consumption"> *</span>
+                        </em>
+                    </li>
+                    
+                </ul>
+                <h4>
+                    Beverages
+                </h4>
+                
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Espresso Bar
+                        <em class="bistro__item--description">
+                            Americano, Cappuccino, Espresso Latte & Mocha
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Hot Chocolate
+                    </li>
+                    <li class="bistro__item">
+                        Sodas, Juices
+                    </li>
+                    <li class="bistro__item">
+                        Bottle Beer
+                    </li>
+                    <li class="bistro__item">
+                        Cocktails
+                        <em class="bistro__item--description">
+                            Bloody Mary, Margarita & Mimosa
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Wine by the bottle or Glass
+                    </li>
+                </ul>
+
+
+                <h4>
+                    Assorted Desserts & Morning Pasteries
+                </h4>
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Vary daily
+                    </li>
+                </ul>
+
+                <h4>
+                    Soup Du Jour
+                </h4>
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Bowl of Soup
+                    </li>
+                </ul>
+                <h4>
+                    Salads
+                </h4>
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Garden Veggie
+                        <em class="bistro__item--description">
+                            Cherry tomatoes, English cucumbers, carrots, red onions with a Balsamic vinaigrette dressing on a bed of Farmer’s market greens
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Asian Chicken Salad
+                        <em class="bistro__item--description">
+                            Grilled Chicken Breast, crispy rice noodles, mandarins with a spicy peanut dressing on a bed of Romaine
+                        </em>
+                    </li>
+                    <li class="bistro__item">
+                        Salmon Salad <span class="food-consumption">*</span>
+                        <em class="bistro__item--description">
+                            Fillet of Grilled Salmon, raspberries, candied walnuts with a raspberry vinaigrette on a bed of Farmer’s market greens
+                        </em>
+                    </li>
+                </ul>
+                <!-- <article class="image-slider mb-giant mt-giant">
+                  
+                    <div class="image-slider__track">
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/a_sailing_instructor_on_boat_with_group_of_people.jpg" alt="A sailing instructor on a boat in the lake with his class." title="A group of people on a boat learning to sail from an instructor on the lake.">
+                        </div>
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/a_full_boat_on_the_lake.jpg" alt="A full sail boat in the middle of the lake." title="A group of men in a sail boat sailing in the middle of the lake. The sail is blue.">
+                        </div>
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/four_poeple_in_a_boat_on_the_lake.jpg" alt="A group of four people on a boat in the middle of the lake" title="A group of four people on a boat in the middle of the lake">
+                        </div>
+                        <div class="image-slider__slide">
+                            <img src="imgs/slider/a_group_learning_to_sail_on_the_lake.jpg" alt="A group in a boat on the lake with an instructor." title="A group of people learning to sail on the lake with an instructor.">
+                        </div>
+                    </div>
+                        <button class="image-slider__control image-slider__control--prev" aria-label="Previous slide">
+                            <
+                        </button>
+                        <button class="image-slider__control image-slider__control--next" aria-label="Next slide">
+                            >
+                        </button>
+                    
+                </article> -->
+                <h3>
+                    Lunch
+                </h3>
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Fish & Chips <span class="food-consumption">*</span>
+                        <em class="bistro__item--description">
+                            Beer Battered Fresh Cod & Shoestring Fries
+                        </em>
+                        <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Kale Slaw with a ginger sesame vinaigrette & Greek salad
+                        </p>
+                    </li>
+                    <li class="bistro__item">
+                        Angus Beef Cheeseburger <span class="food-consumption">*</span>
+                        <em class="bistro__item--description">
+                            Cheddar, Special sauce, caramelized onions
+                        </em>
+                        
+                        <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Kale Slaw with a ginger sesame vinaigrette & Garden veggie salad
+                        </p>
+                    </li>
+                    <li class="bistro__item">
+                        Wine Country Chicken <span class="food-consumption">*</span>
+                        <em class="bistro__item--description">
+                            Grilled Chicken, Brie, baby spinach, mayonnaise & caramelized onions on French Baguette
+                        </em>
+                        <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Greek salad & homemade Kettle Chips
+                        </p>
+                    </li>
+                    <li class="bistro__item">
+                        Double Decker Club <span class="food-consumption">*</span>
+                        <em class="bistro__item--description">
+                            Roasted Turkey breast, Applewood smoked bacon, lettuce, tomato and mayonnaise on White bread
+                        </em>
+                        <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Kettle Chips & Greek salad
+                        </p>
+                    </li>
+                    <li class="bistro__item">
+                        South Western Black Bean Burger (Vegetarian)
+                        <em class="bistro__item--description">
+                            Chipotle sauce, cilantro pesto, pickled red onions and avocado
+                        </em>
+                        <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Garden veggie salad & Roasted Beets with a blood orange vinaigrette
+                        </p>
+                    </li>
+                    <li class="bistro__item">
+                        Angus Beef Hot Dog
+                        <em class="bistro__item--description">
+                            Served with special sauce
+                        </em>
+                        <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Kale Slaw with a ginger sesame vinaigrette & Garden veggie salad
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <h3>
+                    Kids
+                </h3>
+                <hr>
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Angus Beef Hamburger
+                         <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Applesauce & homemade Kettle Chips
+                        </p>
+                    </li>
+                    <li class="bistro__item">
+                        Angus Beef Hot Dog
+                         <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Applesauce & homemade Kettle Chips
+                        </p>
+                    </li>
+                    <li class="bistro__item">
+                        Grilled Cheese
+                         <p>
+                            <span>
+                                Sides:
+                            </span>
+                            Applesauce & homemade Kettle Chips
+                        </p>
+                    </li>
+                </ul>
+                <h3>
+                    Sides
+                </h3>
+                <hr>
+                <ul class="bistro__items">
+                    <li class="bistro__item">
+                        Shoestring Fries
+                    </li>
+                    <li class="bistro__item">
+                        Pickle Fries
+                    </li>
+                    <li class="bistro__item">
+                        Beer Battered Onion Rings
+                    </li>
+                    <li class="bistro__item">
+                        Applewood Smoked Bacon
+                    </li>
+                    <li class="bistro__item">
+                        Garden Veggie Salad
+                    </li>
+                    <li class="bistro__item">
+                        Greek Salad
+                    </li>
+                    <li class="bistro__item">
+                        Roasted Beets with a Blood Orange vinaigrette
+                    </li>
+                    <li class="bistro__item">
+                        Kale Slaw with a Ginger Sesame vinaigrette
+                    </li>
+                </ul>
+            </article>
+            <aside class="class-info">
+                <em style="font-size: 14px; line-height: 1.2;">  
+                    <span class="food-consumption">* </span>
+                    Served raw or undercooked, or contains raw or undercooked ingredients.
+                    Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions
+                </em>
+            </aside>
+        </section>
+        <footer class="footer">
+            <article class="footer__user-actions">
+                <div>
+                    <a href="" class="footer__newsletter">
+                        Subscribe <br>
+                        <span>
+                            to our newsletter
+                        </span>
+                    </a>
+                </div>
+                
+                <ul class="social__icons">
+                    <li class="social__icon">
+                        <a href="">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="footer__privacy">
+                <ul>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Terms of Use</a>
+                    </li>
+                </ul>
+            </article>
+        </footer>
+    </section>
+</main>
+<!-- Javascript  -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>

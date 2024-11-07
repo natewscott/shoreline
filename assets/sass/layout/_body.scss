@@ -12,7 +12,7 @@
 .class-info {
     &__header {
         hr {
-             margin: 1rem 0 2.4rem 0;
+            margin: 1rem 0 2.4rem 0;
             border-top: 1.5px solid $color-secondary; 
 
             &:last-of-type {
@@ -54,4 +54,45 @@
 
 .image__grid img:nth-child(4) {
     grid-column: 1 / -1; /* Full width */
+}
+
+
+.bistro {
+    &__menu {
+        h3 {
+            color: $color-tertiary;
+            text-transform: uppercase;
+        }
+        h4 {
+            width: fit-content;
+            margin-top: 2.4rem;
+            margin-bottom: 1.6rem;
+            border-bottom: 1px solid $color-secondary;
+        }
+        hr {
+            margin: 0 0 2.4rem 0;
+            border-top: 1.5px solid $color-secondary; 
+        }
+    }
+
+    &__item {
+        font-weight: $font-heavy;
+        margin-bottom: 1.6rem;
+        margin-left: 1.6rem;
+        line-height: 1;
+
+        &--description {
+            display: block;
+            margin-top: .8rem;
+            font-weight: $font-light;
+        }
+    }
+
+    p {
+        font-weight: $font-normal;
+    }
+}
+
+.food-consumption {
+    color: $color-errors;
 }
