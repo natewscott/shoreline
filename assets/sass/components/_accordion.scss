@@ -1,0 +1,30 @@
+.accordion {
+    &__header {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            display: inline-block;
+            font-size: 1.8rem;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    &__items {
+        display: none;
+        padding: 0 1.6rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.accordion.active .accordion__header span {
+    transform: rotate(180deg); /* Rotate caret when accordion is open */
+}
+
+.accordion.active .accordion__items {
+    display: block; /* Show items when accordion is active */
+
+}

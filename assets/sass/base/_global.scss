@@ -36,12 +36,16 @@ main {
     margin-right: 2.4rem;
     margin-top: 4rem !important;
     
-    & {
-        @include breakpoint(medium) {
-            margin: 0 auto;
-        }
+    // General styles for medium screens and above
+    @include breakpoint(large) {
+        margin: 0 auto;
     }
 
+    // Styles specifically for landscape views
+    @include breakpoint(mobile, landscape) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     &--grid { 
         display: grid;
         gap: 6rem;
@@ -92,4 +96,9 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+
+hr {
+    margin: 0 0 2.4rem 0;
+    border-top: 1.5px solid $color-secondary; 
 }

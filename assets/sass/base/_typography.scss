@@ -11,6 +11,7 @@ h2 {
 }
 h3 {
     font-size: 3.732rem;
+    line-height: 1.2;
 }
 h4 {
     font-size: 2.765rem;
@@ -33,8 +34,17 @@ button {
 }
 
 p,
-li {
+li,
+address {
     font-size: 1.8rem;
     line-height: 1.2;
     margin-bottom: 2.4rem;
+}
+
+li {
+    margin-bottom: .8rem;
+}
+
+address {
+    font-style: normal;
 }

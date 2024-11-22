@@ -15,4 +15,10 @@
             color: $color-dark;
         }
     }
+
+    &--link {
+        color: $color-dark;
+        font-size: 1.6rem;
+        letter-spacing: .95px;
+    }
 }

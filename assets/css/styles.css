@@ -375,6 +375,7 @@ h2 {
 
 h3 {
   font-size: 3.732rem;
+  line-height: 1.2;
 }
 
 h4 {
@@ -401,10 +402,19 @@ button {
 }
 
 p,
-li {
+li,
+address {
   font-size: 1.8rem;
   line-height: 1.2;
   margin-bottom: 2.4rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+address {
+  font-style: normal;
 }
 
 html {
@@ -443,9 +453,15 @@ main__content {
   margin-right: 2.4rem;
   margin-top: 4rem !important;
 }
-@media (min-width: 48rem) {
+@media (min-width: 62rem) {
   .inner__container {
     margin: 0 auto;
+  }
+}
+@media (max-width: 0) and (orientation: landscape) {
+  .inner__container {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .inner__container--grid {
@@ -487,6 +503,11 @@ a {
 img {
   width: 100%;
   height: auto;
+}
+
+hr {
+  margin: 0 0 2.4rem 0;
+  border-top: 1.5px solid #25AAE1;
 }
 
 .form--modal {
@@ -569,6 +590,11 @@ img {
 }
 .btn--secondary a {
   color: #101820;
+}
+.btn--link {
+  color: #101820;
+  font-size: 1.6rem;
+  letter-spacing: 0.95px;
 }
 
 .weather {
@@ -681,10 +707,19 @@ img {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+.card img {
+  box-shadow: 10px 10px 10px black;
+}
 @media (min-width: 48rem) {
   .card {
     flex-direction: row;
     justify-content: space-between;
+    gap: 2.4rem;
+  }
+}
+@media (min-width: 62rem) {
+  .card {
+    gap: 0;
   }
 }
 .card.card--img-right {
@@ -701,7 +736,7 @@ img {
 .card__details--right {
   padding: 2.4rem 0;
 }
-@media (min-width: 48rem) {
+@media (min-width: 62rem) {
   .card__details--right {
     padding: 2.4rem 0 2.4rem 6.4rem;
   }
@@ -709,7 +744,7 @@ img {
 .card__details--left {
   padding: 2.4rem 0;
 }
-@media (min-width: 48rem) {
+@media (min-width: 62rem) {
   .card__details--left {
     padding: 2.4rem 6.4rem 2.4rem 0;
   }
@@ -769,9 +804,35 @@ img {
   right: 1rem;
 }
 
+.accordion__header {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion__header span {
+  display: inline-block;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+.accordion__items {
+  display: none;
+  padding: 0 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.accordion.active .accordion__header span {
+  transform: rotate(180deg); /* Rotate caret when accordion is open */
+}
+
+.accordion.active .accordion__items {
+  display: block; /* Show items when accordion is active */
+}
+
 .header {
   position: absolute;
-  z-index: 50;
+  z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -846,8 +907,9 @@ img {
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  z-index: -1;
-  transition: opacity 0.3s ease, z-index 0.3s ease;
+  z-index: -1; /* Initially place below other elements */
+  visibility: hidden; /* Hide nav from screen readers and interaction */
+  transition: opacity 0.3s ease, z-index 0.3s ease, visibility 0.3s ease;
 }
 @media (min-width: 48rem) {
   .nav {
@@ -861,6 +923,8 @@ img {
     padding: 1rem 2rem;
     background: none;
     opacity: 1;
+    visibility: visible; /* Always visible on medium+ screens */
+    z-index: auto;
     transition: background-color 0.3s ease;
   }
 }
@@ -880,7 +944,8 @@ img {
 }
 .nav--active {
   opacity: 1;
-  z-index: 60;
+  z-index: 60; /* Bring it to the front */
+  visibility: visible; /* Make it interactive */
 }
 .nav__logo--mobile {
   display: none;
@@ -902,27 +967,25 @@ img {
 }
 .nav__item {
   color: rgb(242.8, 245.85, 248.9);
-  font-size: 1.8rem;
-  margin-right: 6.4rem;
+  font-size: 1.6rem;
+  margin-right: 1.6rem;
   margin-bottom: 2.4rem;
 }
 .nav__item a {
   color: rgb(242.8, 245.85, 248.9);
   letter-spacing: 1.5px;
-  font-size: 3.11rem;
-}
-@media (min-width: 48rem) {
-  .nav__item a {
-    font-size: 2.4rem;
-  }
+  font-size: 1.8rem;
 }
 @media (min-width: 48rem) {
   .nav__item {
-    margin-bottom: 0;
+    margin-right: 1.6rem;
   }
 }
-.nav__item:last-child {
-  margin-right: 6.4rem;
+@media (min-width: 62rem) {
+  .nav__item {
+    margin-bottom: 0;
+    margin-right: 3.4rem;
+  }
 }
 @media (min-width: 48rem) {
   .nav__item:last-child {
@@ -935,6 +998,9 @@ img {
   z-index: 51;
   top: 20px;
   left: 2rem;
+}
+.nav--active a {
+  font-size: 3.11rem;
 }
 .nav--active .nav__items {
   display: flex;

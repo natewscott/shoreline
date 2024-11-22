@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroLinks = document.querySelectorAll('.hero__links'); // Select all hero links
 
 
-    let lastScrollPosition = window.scrollY;
+    // let lastScrollPosition = window.scrollY;
+    let lastScrollPosition = 0;
     const header = document.querySelector('.header');
 
     // Set initial state
@@ -44,14 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         const currentScrollPosition = window.scrollY;
 
-        // Check scroll direction
-        if (currentScrollPosition > lastScrollPosition) {
+        if (currentScrollPosition < 50) {
+            // Ensure header is visible with a transparent background near the top
+            header.classList.add('visible', 'transparent');
+        } else if (currentScrollPosition > lastScrollPosition) {
             // Scrolling down
             header.classList.remove('visible'); // Hide header
         } else {
             // Scrolling up
             header.classList.add('visible'); // Show header
-
+    
             // Add white background if scrolled past a certain point
             if (currentScrollPosition > 100) {
                 header.classList.remove('transparent');
@@ -59,8 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.add('transparent'); // Make header transparent again
             }
         }
-
+    
         lastScrollPosition = currentScrollPosition;
+        // // Check scroll direction
+        // if (currentScrollPosition > lastScrollPosition) {
+        //     // Scrolling down
+        //     header.classList.remove('visible'); // Hide header
+        // } else {
+        //     // Scrolling up
+        //     header.classList.add('visible'); // Show header
+
+        //     // Add white background if scrolled past a certain point
+        //     if (currentScrollPosition > 100) {
+        //         header.classList.remove('transparent');
+        //     } else {
+        //         header.classList.add('transparent'); // Make header transparent again
+        //     }
+        // }
+        
     });
 
     // Announcements Modal
@@ -102,7 +121,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    const accordions = document.querySelectorAll('.accordion');
 
+    accordions.forEach((accordion) => {
+        const header = accordion.querySelector('.accordion__header');
+
+        header.addEventListener('click', () => {
+            // Close any open accordion sections
+            accordions.forEach((acc) => {
+                if (acc !== accordion) {
+                    acc.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked accordion
+            accordion.classList.toggle('active');
+        });
+    });
     //Slider
     const track = document.querySelector('.image-slider__track');
     const slides = Array.from(track.children);
@@ -163,4 +198,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+   
 });

@@ -1,30 +1,57 @@
-@mixin breakpoint($point) {
-    @if $point==xlarge {
-        @media (min-width: $breakpoint-xxl-portrait) {
-            @content;
+@mixin breakpoint($point, $orientation: null) {
+    @if $point == xlarge {
+        @if $orientation {
+            @media (min-width: $breakpoint-xxl-portrait) and (orientation: $orientation) {
+                @content;
+            }
+        } @else {
+            @media (min-width: $breakpoint-xxl-portrait) {
+                @content;
+            }
         }
     }
-    @else if $point==large {
-        @media (min-width: $breakpoint-lg-portrait) {
-            @content;
+    @else if $point == large {
+        @if $orientation {
+            @media (min-width: $breakpoint-lg-portrait) and (orientation: $orientation) {
+                @content;
+            }
+        } @else {
+            @media (min-width: $breakpoint-lg-portrait) {
+                @content;
+            }
         }
     }
-
-    @else if $point==medium {
-        @media (min-width: $breakpoint-md-portrait) {
-            @content;
+    @else if $point == medium {
+        @if $orientation {
+            @media (min-width: $breakpoint-md-portrait) and (orientation: $orientation) {
+                @content;
+            }
+        } @else {
+            @media (min-width: $breakpoint-md-portrait) {
+                @content;
+            }
         }
     }
-
-    @else if $point==small {
-        @media(min-width: $breakpoint-sm-portrait) {
-            @content;
+    @else if $point == small {
+        @if $orientation {
+            @media (min-width: $breakpoint-sm-portrait) and (orientation: $orientation) {
+                @content;
+            }
+        } @else {
+            @media (min-width: $breakpoint-sm-portrait) {
+                @content;
+            }
         }
     }
-
-    @else if $point==mobile {
-        @media(max-width: $breakpoint-xs-portrait) {
-            @content;
+    @else if $point == mobile {
+        @if $orientation {
+            @media (max-width: $breakpoint-xs-portrait) and (orientation: $orientation) {
+                @content;
+            }
+        } @else {
+            @media (max-width: $breakpoint-xs-portrait) {
+                @content;
+            }
         }
     }
 }
