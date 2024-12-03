@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoreline Lake - Wingfoiling</title>
+
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- Styles -->
+       <!-- CSS Reset -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo header__logo--white">
+            <a href="index.html">
+                <img  src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
+        <div class="header__logo header__logo--normal">
+            <a href="index.html">
+                <img  src="imgs/misc/sl_logo.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
+     <nav class="nav">
+       
+        <div class="nav__logo--mobile">å
+            <a href="index.html">
+                <img src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
+        <img src="imgs/misc/index-bg.jpg" alt="Background image" class="nav__background">
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a href="play.html">
+                    Play
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="learn.html">
+                    Learn
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="unwind.html">
+                    Unwind
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="events.html">
+                    Events
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+        </ul>
+     </nav>
+     <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open navigation menu" aria-controls="nav-menu">
+        <span class="hamburger__line line1"></span>
+        <span class="hamburger__line line2"></span>
+        <span class="hamburger__line line3"></span>
+        <span class="hamburger__x">X</span> <!-- Close X element -->
+     </button>
+    </header>
+    <main class="main">
+        <section class="hero" >
+            <img src="imgs/hero/a_young_man_on_a_wingfoil_at_shoreline_lake.jpg" alt="A young man on a wingboard having fun on shoreline lake" class="hero__vid">
+     
+            <div class="hero__titles">
+                <h1>
+                  wingfoiling
+                </h1>
+                <!-- <span class="hero__subtitle">
+                    all ages, all skill levels
+                </span> -->
+            </div>
+            <article class="weather--icons">
+                <ul class="weather__info">
+                    <li class="weather__detail">
+                        <span class="weather__icon">
+                            <img src="imgs/misc/Partly-cloudy.png" alt="">
+                        </span>
+                        80&deg;
+                    </li>
+                    <li class="weather__detail">
+                        <span class="weather__icon">
+                            <img src="imgs/misc/Wind.png" alt="">
+                        </span>
+                        12KT
+                    </li>
+                </ul>
+               </article>
+        </section>
+        <section class="main__content">
+            <section class="inner__container">
+                <article class="intro">
+                    <a class="btn btn--primary" style="color:#101820; font-size: 16px;" href="https://www.amilia.com/store/en/shoreline-lake/shop/programs" target="_blank">
+                        Book
+                    </a>
+               
+            </article>
+            <section class="cards">
+                <article class="card card--img-right">
+                    <div class="card__details card__details--right">
+                        <h2>
+                           Introductory Wingboarding
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quidem doloribus voluptatem ad porro adipisci. Nam tempore illum eos consequatur aspernatur ea ipsa, perferendis ducimus quasi, consectetur in? Quaerat, cumque.
+                        </p>
+                        <a href="introductory_wingfoiling.html" class="btn btn--secondary btn--link">
+                            Explore
+                    </a>
+                        
+                    </div> 
+                    <div class="card__img">
+                        <picture>
+                            <!-- For mobile devices -->
+                            <source srcset="imgs/cards/students_receiving_sailing_instructions_at_shoreline_lake_330.jpg" media="(max-width: 767px)">
+                            <!-- For larger screens -->
+                            <source srcset="imgs/cards/students_receiving_sailing_instructions_at_shoreline_lake_250.jpg" media="(min-width: 768px)">
+                            <img src="imgs/cards/students_receiving_sailing_instructions_at_shoreline_lake_330.jpg" 
+                            alt="students receiving sailing instructions at shoreline lake." title="students receiving sailing instructions at shoreline lake.">
+                        </picture>
+                        <!-- <img src="imgs/cards/students-receiving-sailing-instructions-at-shoreline-lake.jpg" alt="students receiving sailing instructions at shoreline lake." title="students receiving sailing instructions at shoreline lake."> -->
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__img">
+                        <picture>
+                            <!-- For mobile devices -->
+                            <source srcset="imgs/cards/intermediate_sailors_on_shoreline_lake_330.jpg" media="(max-width: 767px)">
+                            <!-- For larger screens -->
+                            <source srcset="imgs/cards/intermediate_sailors_on_shoreline_lake_250.jpg" media="(min-width: 768px)">
+                            <img src="imgs/cards/intermediate_sailors_on_shoreline_lake_330.jpg" 
+                            alt="A woman saling in a boat on shoreline lake." title="intermediate sailing at shoreline lake.">
+                        </picture>
+                        
+                    </div>
+                    <div class="card__details card__details--left">
+                        <h2>
+                            Basic Foiling
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quidem doloribus voluptatem ad porro adipisci. Nam tempore illum eos consequatur aspernatur ea ipsa, perferendis ducimus quasi, consectetur in? Quaerat, cumque.
+                        </p>
+                        <a href="intermediate_windsurfing.html" class="btn btn--secondary btn--link">
+                            Explore
+                        </a>
+                        
+                    </div> 
+                    
+                </article> 
+                <!-- <article class="card card--img-right">
+                    <div class="card__details card__details--right">
+                        <h2>
+                           Advanced Windsurfing
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quidem doloribus voluptatem ad porro adipisci. Nam tempore illum eos consequatur aspernatur ea ipsa, perferendis ducimus quasi, consectetur in? Quaerat, cumque.
+                        </p>
+                        <a href="advanced_windsurfing.html" class="btn btn--secondary btn--link">
+                            Explore
+                        </a>
+                      
+                    </div> 
+                    <div class="card__img">
+                        <picture>
+                            For mobile devices
+                            <source srcset="imgs/cards/advanced_sailing_on_shoreline_lake_330.jpg" media="(max-width: 767px)">
+                            For larger screens
+                            <source srcset="imgs/cards/advanced_sailing_on_shoreline_lake_250.jpg" media="(min-width: 768px)">
+                            <img src="imgs/cards/advanced_sailing_on_shoreline_lake_330.jpg" 
+                            alt="A man manuvering his boat while it is on its side." title="advanced sailing on shoreline lake">
+                        </picture>
+                    </div>
+                </article> -->
+                <!-- <article class="card">
+                    <div class="card__img">
+                        <picture>
+                            For mobile devices
+                            <source srcset="imgs/cards/men_in_a_boat_receiving_racing_instructions_330.jpg" media="(max-width: 767px)">
+                            For larger screens
+                            <source srcset="imgs/cards/men_in_a_boat_receiving_racing_instructions_250.jpg" media="(min-width: 768px)">
+                            <img src="imgs/cards/men_in_a_boat_receiving_racing_instructions_330.jpg" 
+                            alt="men in a sailbaot on shoreline lake receiving racing instruction." title="men in a sailbaot on shoreline lake receiving racing instruction">
+                        </picture>
+                        
+                    </div>
+                    <div class="card__details card__details--left">
+                        <h2>
+                         Windsurfing Membership
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum quidem doloribus voluptatem ad porro adipisci. Nam tempore illum eos consequatur aspernatur ea ipsa, perferendis ducimus quasi, consectetur in? Quaerat, cumque.
+                        </p>
+                        <a href="windsurfing_membership.html" class="btn btn--secondary btn--link">
+                            Explore
+                        </a>
+                       
+                    </div> 
+                    
+                </article> -->
+                
+            </section>
+            </section>
+            <footer class="footer">
+                <article class="footer__user-actions">
+                    <div>
+                        <a href="" class="footer__newsletter">
+                            Subscribe <br>
+                            <span>
+                                to our newsletter
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <ul class="social__icons">
+                        <li class="social__icon">
+                            <a href="">
+                                <img src="imgs/misc/facebook-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="">
+                                <img src="imgs/misc/instagram-icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="footer__privacy">
+                    <ul>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Terms of Use</a>
+                        </li>
+                    </ul>
+                </article>
+            </footer>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
