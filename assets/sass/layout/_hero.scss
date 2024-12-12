@@ -37,6 +37,13 @@
         color: $color-white;
         text-align: center;
         z-index: 2;
+        width: 90%; // Limit the width of the titles
+        hyphens: auto; // Allow natural hyphenation
+        white-space: normal; // Enable line wrapping
+
+        @include breakpoint(medium) {
+            width: auto;
+        }
     }
     &__subtitle {
         font-size: 3.981rem;

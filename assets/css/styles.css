@@ -708,7 +708,7 @@ hr {
   margin-bottom: 4rem;
 }
 .card img {
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 @media (min-width: 48rem) {
   .card {
@@ -1106,6 +1106,14 @@ hr {
   color: rgb(242.8, 245.85, 248.9);
   text-align: center;
   z-index: 2;
+  width: 90%;
+  hyphens: auto;
+  white-space: normal;
+}
+@media (min-width: 48rem) {
+  .hero__titles {
+    width: auto;
+  }
 }
 .hero__subtitle {
   font-size: 3.981rem;
