@@ -52,6 +52,16 @@ main {
 
         .content {
             order: 2; /* Ensures content is in the first column */
+
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 2.4rem;
+                @include breakpoint(medium) {
+                    font-size: 4.479rem;
+                }
+            }
+
+            
         }
     
         .class-info {
@@ -76,6 +86,22 @@ main {
 
         
        
+    }
+}
+
+.large {
+    display: none;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+}
+
+.small {
+    display: block;
+
+    @include breakpoint(medium) {
+        display: none;
     }
 }
 

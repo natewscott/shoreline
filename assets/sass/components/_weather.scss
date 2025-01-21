@@ -4,7 +4,7 @@
         position: absolute;
         bottom:0;
         left: 2.5rem; 
-        z-index: 10;
+        z-index: 5;
         & {
             @include breakpoint(medium) {
                 bottom:4rem;
@@ -20,14 +20,18 @@
    &__info {
     display: flex;
     gap: 1.6rem;
-    color: $color-white;
+    a {
+        color: $color-white;
+        display: flex;
+    }
+
    }
 
    &__detail {
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
-    font-size: 2.4rem;
+    font-size: 1.75rem;
     line-height: 1;
     text-align: center;
    }

@@ -6,10 +6,17 @@
     <meta name="description" content="Meetings for companies, seminars, workshops, church groups, associations, and private groups.">
     <title>Shoreline Lake - Meetings</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -77,7 +84,7 @@
     </header>
     <main class="main">
         <section class="hero" >
-            <img src="imgs/hero/meeting_room_set_up.jpg" alt="An empty meeting room set up for guests." class="hero__vid">
+            <img src="imgs/hero/meeting_room_setup.jpg" alt="An empty meeting room set up for guests." class="hero__vid">
           
             <div class="hero__titles">
                 <h1>
@@ -87,19 +94,23 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -142,10 +153,10 @@
                                 </div>
                              
                                 <div class="image-slider__slide">
-                                    <img src="imgs/slider/flowers_in_a_glass_on_a_table.jpg" alt="A bouquet of flowers on a table" title="A bouquet of flowers on a table">
+                                    <img src="imgs/slider/meeting_room_set_up.jpg" alt="An empty table setup in the meeting room for guests" title="An empty table setup in the meeting room for guests">
                                 </div>
                                 <div class="image-slider__slide">
-                                    <img src="imgs/slider/refreshemnts_on_a_table.jpg" alt="For jars of drinks on a table" title="For jars of drinks on a table">
+                                    <img src="imgs/slider/platters_of_fruit_and_pastries.jpg" alt="Platters of fruit and pastries set out for a meeting." title="Platters of fruit and pastries set out for a meeting.">
                                 </div>
                                 
                             </div>
@@ -157,21 +168,7 @@
                                 </button>
                             
                         </article>
-                       <h6>
-                        Pricing
-                       </h6>
-                       <p>
-                           <strong>Minimum of 4 people – 3 hour clinic</strong>
-                        </p>
-                        <ul>
-                            <li>4-7 people: $170/person</li>
-                            <li>8-14 people: $150/person</li>
-                            <li>15-30 people: $125/person</li>
-                        </ul>
-                        <p>
-                            To sign up a group, or for more info, please fill out the Events Inquiry Form, or call the Events Team at <a href="tel:650-965-3779">650-965-3779</a>. To assess skill level, please contact our sailing staff at: <a href="mailto:">boathouse@shorelinelake.com.</a>
-                        </p>
-
+                      
 
                         <aside class="class-info">
                 </aside>
@@ -188,16 +185,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

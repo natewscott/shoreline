@@ -6,10 +6,17 @@
     <meta name="description" content="Join the team at Shoreline Lake and enjoy the camaraderie, fun, excitement, and leadership opportunity, while doing something you love.">
     <title>Shoreline Lake - Job Opportunities</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -89,19 +96,23 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -206,7 +217,7 @@
 
                     <p>
                         <strong>Schedule for Sailing and Windsurfing Summer Camps:</strong>
-                    8:00am-5:30 pm (times vary by program) Monday-Friday, June 3rd - August 16th. Qualified applicants seeking part time positions should inquire about scheduling specifics.
+                    8:00am-5:30 pm (times vary by program) Monday-Friday, June 2nd - August 15th Qualified applicants seeking part time positions should inquire about scheduling specifics.
                     </p>
                     <hr>
                     <h5>
@@ -224,7 +235,7 @@
                         <li style="list-style-type: none; margin-bottom:1rem">
                              Keep students safe, motivated, and focused both on and off the water.
                         </li style="list-style-type: none; margin-bottom:1rem">
-                        <li>
+                        <li style="list-style-type: none; margin-bottom:1rem">
                             Prepare lesson plans.
                         </li>
                         <li style="list-style-type: none; margin-bottom:1rem">
@@ -284,7 +295,7 @@
                     </ul>
                     <p>
                         <strong>Schedule for Camp Shoreline:</strong>
-                        9:30am-3:30 pm Monday-Friday, June 3rd - August 16th. Qualified applicants seeking part time or full time positions should inquire about scheduling specifics.
+                        9:30am-3:30 pm Monday-Friday, June 2nd - August 15th. Qualified applicants seeking part time or full time positions should inquire about scheduling specifics.
                      </p>
                     <hr>
                     <h5>
@@ -330,7 +341,7 @@
                         <p>
                             Positions include:
                         </p>
-                        <ul class="course-content__learn" >
+                        <ul class="course-content__learn mb-giant" >
                             <li style="list-style-type: none; margin-bottom:1rem">
                                 Cooks, prep cooks, food preparers of hot and cold meals
                             </li>
@@ -346,10 +357,11 @@
                             <li style="list-style-type: none; margin-bottom:1rem">
                                 Bussers, clean-up crew
                             </li>
+                            <li style="list-style-type: none; margin-bottom:1rem">
+                                Snack Bar
+                            </li>
                         </ul>
-                        <p>
-                            Snack Bar
-                        </p>
+                       
                         <p>
                             Responsibilities:
                         </p>
@@ -387,16 +399,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

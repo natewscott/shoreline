@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Beginner to advanced. Learn sailing, board sports and kayaking on Shoreline Lake without the risks of the actual bay.">
     <title>Shoreline Lake - Learn</title>
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -90,18 +97,22 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
                 </ul>
                </article>
         </section>
@@ -174,7 +185,7 @@
                                 Wingfoiling
                             </h2>
                             <p>
-                                Wingfoiling is an exciting watersport that combines elements of windsurfing, kiteboarding, and hydrofoiling. The sport offers a unique sensation of flying over the water, with the ability to move swiftly in light winds
+                                Wingfoiling is an exciting watersport that combines elements of windsurfing, kiteboarding, and hydrofoiling. The sport offers a unique sensation of flying over the water, with the ability to move swiftly in light winds.
                             </p>
                              <a href="windfoiling.html" class="btn btn--secondary btn--link">
                                 Explore
@@ -209,7 +220,7 @@
                                 Kayaking
                             </h2>
                             <p>
-                                For those dreaming of exploring pristine rivers, shooting through rapids, or joining fellow kayak-surfers on the waves of Santa Cruz, this is for you! Appropriate for ages 13 and up
+                                For those dreaming of exploring pristine rivers, shooting through rapids, or joining fellow kayak-surfers on the waves of Santa Cruz, this is for you! Appropriate for ages 13 and up.
                             </p>
                              <a href="kayaking.html" class="btn btn--secondary btn--link">
                                 Explore
@@ -224,7 +235,7 @@
                                Standup Paddleboarding
                             </h2>
                             <p>
-                                Unlike surfing, stand up paddling doesn’t require waves. And, with easy-to-learn basics and a great core workout, you’ll improve your balance and core muscles while having a great time on the safe and calm waters of Shoreline Lake
+                                Unlike surfing, stand up paddling doesn’t require waves. And, with easy-to-learn basics and a great core workout, you’ll improve your balance and core muscles while having a great time on the safe and calm waters of Shoreline Lake.
                             </p>
                              <a href="standup_paddleboarding.html" class="btn btn--secondary btn--link">
                                 Explore
@@ -271,7 +282,7 @@
                     <article class="card card--img-right">
                         <div class="card__details card__details--right">
                             <h2>
-                               Kids Programs
+                               Kids' Programs
                             </h2>
                             <p>
                                 Seasonal and regular camps, paddle adventure, beginner windsurfing and bug sailing, plus more. Introducing your kids to watersports can have a lifelong effect, as they are challenged both cerebrally and physically in fun and exciting ways.
@@ -332,16 +343,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

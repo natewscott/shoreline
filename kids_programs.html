@@ -7,10 +7,17 @@
 ">
     <title>Shoreline Lake - Kids Programs</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -82,7 +89,7 @@
      
             <div class="hero__titles">
                 <h1>
-                   kids programs
+                   kids' programs
                 </h1>
                 <!-- <span class="hero__subtitle">
                     all ages, all skill levels
@@ -90,23 +97,32 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
             <section class="inner__container">
+                <article class="intro">
+                    <p class="mt-giant mb-giant">
+                        The positive impact of wind driven water sports on young people is both studied and documented. Learning sailing's unique skillset helps them become confident, develop problem-solving abilities, manage their environment, calculate a multitude of variables at once, take charge, work as a team, stay focused, and more. Plus, it is fun away from screens!
+                    </p>
+                </article>
                 
                 <section class="cards">
                     <article class="card">
@@ -126,6 +142,9 @@
                             <p>
                                 Camp Shoreline offers a STEAM (Science, Technology, Engineering, Arts & Mathematics) based curriculum combined with a range of watersports and other outdoor activities that build scientific, as well as creative, aptitude and skills.
                             </p>
+                            <p>
+                                <strong>Ages: 5-11</strong>
+                            </p>
                              <a href="camp_shoreline.html" class="btn btn--secondary btn--link">
                                 Explore
                             </a>
@@ -141,17 +160,20 @@
                                 This Paddle Sports Camp is a fun, educational, and active day camp located in Shoreline Park. Take advantage of our beautiful lake, perfect for introducing kids to watersports.
 
                             </p>
-                             <a href="paddle_adventures.html" class="btn btn--secondary btn--link">
+                            <p>
+                                <strong>Ages: 8-13</strong>
+                            </p>
+                             <a href="paddle_adventure.html" class="btn btn--secondary btn--link">
                                 Explore
                             </a>
                         </div> 
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/girls_in_a_paddle_boat_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/boy_row_a_boat_330.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/girls_in_a_paddle_boat_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/girls_in_a_paddle_boat_330.jpg" 
+                                <source srcset="imgs/cards/boy_row_a_boat_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/boy_row_a_boat_330.jpg" 
                                 alt="Two girls in a paddle boat." title="Two girls in a paddle boat">
                             </picture>
                            
@@ -162,11 +184,11 @@
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/a_boy_figuring_out_a_line_on_a_sailboat_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/boats_being_launched_330.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/a_boy_figuring_out_a_line_on_a_sailboat_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/a_boy_figuring_out_a_line_on_a_sailboat_330.jpg" 
-                                alt="A boy on a boat figuring out a line" title="A boy on a boat figuring out a line">
+                                <source srcset="imgs/cards/boats_being_launched_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/boats_being_launched_330.jpg" 
+                                alt="A group of boats being launched." title="A group of boats being launched.">
                             </picture>
                            
                         </div>
@@ -177,6 +199,9 @@
                             <p>
                                 In this hands-on week of camp, kids and teens (ages 9-15) are grouped into small teams and introduced to the fundamentals of these challenging, and cerebrally-stimulating watersports.
 
+                            </p>
+                            <p>
+                                <strong>Ages: 9-15</strong>
                             </p>
                              <a href="camp_beg_wind_sail.html" class="btn btn--secondary btn--link">
                                 Explore
@@ -193,6 +218,9 @@
                                 For campers (ages 9-15) who have mastered Level I, this week-long camp helps them continue honing their windsurfing and sailing skills through intensive on-the-water instruction.
 
                             </p>
+                            <p>
+                                <strong>Ages: 9-15</strong>
+                            </p>
                              <a href="camp_inter_wind_sail.html" class="btn btn--secondary btn--link">
                                 Explore
                             </a>
@@ -200,11 +228,11 @@
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/kids_in_a_sailboat_at_shoreline_lake_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/two_kids_sailing_330.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/kids_in_a_sailboat_at_shoreline_lake_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/kids_in_a_sailboat_at_shoreline_lake_330.jpg" 
-                                alt="A group of kids in a sailboat at shoreline lake" title="A group of kids in a sailboat at shoreline lake">
+                                <source srcset="imgs/cards/two_kids_sailing_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/two_kids_sailing_330.jpg" 
+                                alt="Two kids in the water with their boat." title="Two kids in the water with their boat.">
                             </picture>
                            
                         </div>
@@ -214,13 +242,12 @@
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/young_boys_in_a_sailboat_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/kids_in_a_bug_sailboat_330.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/young_boys_in_a_sailboat_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/young_boys_in_a_sailboat_330.jpg" 
-                                alt="Young boys in a sailboat" title="Young boys in a sailboat">
+                                <source srcset="imgs/cards/kids_in_a_bug_sailboat_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/kids_in_a_bug_sailboat_330.jpg" 
+                                alt="Kids in a bug sailboat." title="Kids in a bug sailboat.">
                             </picture>
-                            <!-- <img src="imgs/cards/kids-bowling-set-at-shoreline-lake.jpg" alt="kids bowling set at shoreline lake" title="kids bowling set at shoreline lake"> -->
                         </div>
                         <div class="card__details card__details--left">
                             <h2>
@@ -230,6 +257,9 @@
                                 Want to get your kid enthusiastic about sailing? In Bug Sailing your kid will find the perfect balance of safety, speed and camaraderie.
 
 
+                            </p>
+                            <p>
+                                <strong>Ages: 7-9</strong>
                             </p>
                              <a href="bug_sailing.html" class="btn btn--secondary btn--link">
                                 Explore
@@ -246,6 +276,9 @@
                                 As an activity that can be performed over a lifetime, sailing will produce a unique sense of accomplishment. Shoreline’s experienced and well-qualified instructors provide a supportive learning environment for future sailors.
 
                              </p>
+                             <p>
+                                <strong>Ages: 9-15</strong>
+                            </p>
                              <a href="beginner_sailing.html" class="btn btn--secondary btn--link">
                                  Explore
                              </a>
@@ -264,14 +297,13 @@
                   
                     <article class="card">
                         <picture>
-                           <!-- For mobile devices -->
-                           <source srcset="imgs/cards/boys_in_a_sail_boat_at_shoreline_lake_330.jpg" media="(max-width: 767px)">
-                           <!-- For larger screens -->
-                           <source srcset="imgs/cards/boys_in_a_sail_boat_at_shoreline_lake_250.jpg" media="(min-width: 768px)">
-                           <img src="imgs/cards/boys_in_a_sail_boat_at_shoreline_lake_330.jpg" 
-                               alt="Two boys sitting in a boat at shoreline lake" 
-                               title="Two boys sitting in a boat at shoreline lake">
-                       </picture>
+                            <!-- For mobile devices -->
+                            <source srcset="imgs/cards/two_teens_with_a_boat_330.jpg" media="(max-width: 767px)">
+                            <!-- For larger screens -->
+                            <source srcset="imgs/cards/two_teens_with_a_boat_250.jpg" media="(min-width: 768px)">
+                            <img src="imgs/cards/two_teens_with_a_boat_330.jpg" 
+                            alt="Two teens in the water with their boat." title="Two teens in the water with their boat.">
+                        </picture>
                        <div class="card__details card__details--left">
                            <h2>
                               Intermediate Sailing
@@ -280,6 +312,9 @@
                             For campers (ages 9-15) who have mastered Beginner Sailing, this week-long camp helps them continue honing their sailing skills through intensive on-the-water instruction.
 
                            </p>
+                           <p>
+                                <strong>Ages: 9-15</strong>
+                            </p>
                             <a href="camp_intermediate_sailing.html" class="btn btn--secondary btn--link">
                                Explore
                            </a>
@@ -295,6 +330,9 @@
                             Is your kid enthusiastic about sailing and looking to get back on the water for more? Students ages 11-15 can single-hand or sail with a partner and learn to control this Olympic class planing hull with simple controls for advanced technique.
 
                            </p>
+                           <p>
+                            <strong>Ages: 11-16</strong>
+                        </p>
                             <a href="camp_advanced_sailing.html" class="btn btn--secondary btn--link">
                                Explore
                            </a>
@@ -302,11 +340,11 @@
                        <div class="card__img">
                            <picture>
                                <!-- For mobile devices -->
-                               <source srcset="imgs/cards/learning_advanced_sailing_250.jpg" media="(max-width: 767px)">
+                               <source srcset="imgs/cards/young_man_sailing_330.jpg" media="(max-width: 767px)">
                                <!-- For larger screens -->
-                               <source srcset="imgs/cards/learning_advanced_sailing_250.jpg" media="(min-width: 768px)">
-                               <img src="imgs/cards/learning_advanced_sailing_250.jpg" 
-                               alt="A boy and an instructor in a sailboat" title="A boy and an instructor in a sailboat">
+                               <source srcset="imgs/cards/young_man_sailing_250.jpg" media="(min-width: 768px)">
+                               <img src="imgs/cards/young_man_sailing_330.jpg" 
+                               alt="A boy in a sailboat" title="A boy in a sailboat">
                            </picture>
                           
                        </div>
@@ -316,11 +354,11 @@
                        <div class="card__img">
                            <picture>
                                <!-- For mobile devices -->
-                               <source srcset="imgs/cards/kids_performance_racing_330.jpg" media="(max-width: 767px)">
+                               <source srcset="imgs/cards/teen_performance_sailing_330.jpg" media="(max-width: 767px)">
                                <!-- For larger screens -->
-                               <source srcset="imgs/cards/kids_performance_racing_250.jpg" media="(min-width: 768px)">
-                               <img src="imgs/cards/kids_performance_racing_330.jpg" 
-                               alt="Two boys doing performance sailing at shoreline lake" title="Two boys doing performance sailing at shoreline lake">
+                               <source srcset="imgs/cards/teen_performance_sailing_250.jpg" media="(min-width: 768px)">
+                               <img src="imgs/cards/teen_performance_sailing_330.jpg" 
+                               alt="A boy doing performance sailing at shoreline lake" title="A boy doing performance sailing at shoreline lake">
                            </picture>
                        </div>
                        <div class="card__details card__details--left">
@@ -329,9 +367,10 @@
                            </h2>
                            <p>
                             For the serious sailor interested in polishing their skills and learning to compete, this course covers everything needed in preparation for sailing at a high school level.
-
-
                            </p>
+                           <p>
+                            <strong>Ages: 11-16</strong>
+                        </p>
                             <a href="performance_sailing.html" class="btn btn--secondary btn--link">
                                Explore
                            </a>
@@ -347,6 +386,9 @@
                             Campers (ages 11-16) can take their windsurfing to the next level and learn advanced techniques using high performance monofilm sails.
 
                            </p>
+                           <p>
+                            <strong>Ages: 11-16</strong>
+                        </p>
                             <a href="camp_advanced_windsurfing.html" class="btn btn--secondary btn--link">
                                Explore
                            </a>
@@ -381,9 +423,10 @@
                            </h2>
                            <p>
                             Shoreline Lake offers a variety of seasonal camps for kids.
-
-
                            </p>
+                           <p>
+                            <strong>Ages: 10-15</strong>
+                        </p>
                             <a href="seasonal_camps.html" class="btn btn--secondary btn--link">
                                Explore
                            </a>
@@ -398,8 +441,7 @@
                             Parent FAQ
                          </h2>
                          <p>
-                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus cupiditate a commodi. Laboriosam vitae, distinctio reprehenderit magni quam iste amet soluta iusto inventore, numquam deleniti eveniet veritatis exercitationem nisi nesciunt.
- 
+                            Common parent FAQs for camps at Shoreline Lake.
                          </p>
                           <a href="parent_faq.html" class="btn btn--secondary btn--link">
                              Explore
@@ -431,16 +473,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

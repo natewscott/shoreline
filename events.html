@@ -6,10 +6,17 @@
     <meta name="description" content="Shoreline Lake is the ideal place for your next event. Teams & Game options, catering, watersports clinics, meetings, kids’ birthdays, and more.">
     <title>Shoreline Lake - Events</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -77,31 +84,36 @@
     </header>
     <main class="main">
         <section class="hero" >
-            <img src="imgs/hero/ two_boxes_filled_with_servings_of_french_fries.jpg" alt=" " class="hero__vid">
-     
+            <!-- <img src="imgs/hero/ two_boxes_filled_with_servings_of_french_fries.jpg" alt=" " class="hero__vid"> -->
+            <video autoplay loop muted playsinline preload="auto" class="hero__vid">
+                <source src="imgs/videos/event.webm" type="video/webm">
+                <source src="imgs/videos/event.mp4" type="video/mp4">
+            </video>
             <div class="hero__titles">
                 <h1>
                    events
                 </h1>
-                <!-- <span class="hero__subtitle">
-                    all ages, all skill levels
-                </span> -->
+                
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -137,7 +149,7 @@
                                 Catering
                             </h2>
                             <p>
-                                Hors d'oeuvres, breakfast, lunch and barbeque – chances are the Executive Chef and events staff at Shoreline Lake will come up with a menu that will satisfy
+                                Hors d'oeuvres, breakfast, lunch and barbeque – chances are the Executive Chef and events staff at Shoreline Lake will come up with a menu that will satisfy.
                             </p>
                              <a href="catering.html" class="btn btn--secondary btn--link">
                                 Explore
@@ -173,7 +185,7 @@
                                 Watersports Clinics
                             </h2>
                             <p>
-                                Private group sailing clinic options are available for companies and other organizations at all skill levels, with a focus on enjoying the activity, while learning something new.
+                                Private group sailing and windsurfing clinic options are available for companies and other organizations at all skill levels, with a focus on enjoying the activity, while learning something new.
 
                             </p>
                              <a href="watersports_clinics.html" class="btn btn--secondary btn--link">
@@ -197,13 +209,13 @@
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/meeting_at_shoreline_lake_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/confrence_room_tables_setup_250.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/meeting_at_shoreline_lake_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/meeting_at_shoreline_lake_330.jpg" 
-                                alt="meeting at shoreline lake." title="meeting at shoreline lake">
+                                <source srcset="imgs/cards/confrence_room_tables_setup_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/confrence_room_tables_setup_250.jpg" 
+                                alt="Tables setup in the confrence room for a meeting." title="Tables setup in the confrence room for a meeting.">
                             </picture>
-                            <!-- <img src="imgs/cards/meeting-at-shoreline-lake.jpg" alt="meeting at shoreline lake." title="meeting at shoreline lake"> -->
+                            
                         </div>
                     </article>
 
@@ -211,13 +223,12 @@
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/kids_bowling_at_shoreline_lake_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/birthday_picnic_tables_setup_330.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/kids_bowling_at_shoreline_lake_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/kids_bowling_at_shoreline_lake_330.jpg" 
-                                alt="kids bowling set at shoreline lake" title="kids bowling set at shoreline lake">
+                                <source srcset="imgs/cards/birthday_picnic_tables_setup_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/birthday_picnic_tables_setup_330.jpg" 
+                                alt="A bunch of picnic tables setup up for a birthday event." title="A bunch of picnic tables setup up for a birthday event.">
                             </picture>
-                            <!-- <img src="imgs/cards/kids-bowling-set-at-shoreline-lake.jpg" alt="kids bowling set at shoreline lake" title="kids bowling set at shoreline lake"> -->
                         </div>
                         <div class="card__details card__details--left">
                             <h2>
@@ -257,7 +268,31 @@
                              </picture>
                          </div>
                     </article>  
-                  
+                    <article class="card">
+                        <div class="card__img">
+                            <picture>
+                                <!-- For mobile devices -->
+                                <source srcset="imgs/cards/face_painting_330.jpg" media="(max-width: 767px)">
+                                <!-- For larger screens -->
+                                <source srcset="imgs/cards/face_painting_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/face_painting_330.jpg" 
+                                alt="A young girl getting her painted by a clown." title="A young girl getting her painted by a clown.">
+                            </picture>
+                            <!-- <img src="imgs/cards/kids-bowling-set-at-shoreline-lake.jpg" alt="kids bowling set at shoreline lake" title="kids bowling set at shoreline lake"> -->
+                        </div>
+                        <div class="card__details card__details--left">
+                            <h2>
+                               Event Inquiry
+                            </h2>
+                            <p>
+                                To contact our Events Team for more information about holding your special event at Shoreline, please fill out our Event Inquiry Form.
+                            </p>
+                             <a href="event_inquiry.html" class="btn btn--secondary btn--link">
+                                Explore
+                            </a>
+                        </div> 
+                        
+                    </article>
                 </section>
             </section>
             <footer class="footer">
@@ -272,16 +307,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

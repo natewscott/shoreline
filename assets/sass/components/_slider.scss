@@ -7,13 +7,22 @@
     &__track {
         display: flex;
         transition: transform 0.5s ease-in-out;
-        gap: 2.4rem;
+        gap: 1rem;
+        @include breakpoint(medium) {
+            gap: 2.4rem;
+        }
         width: calc(100% + 24px);
+
+        
     }
 
     &__slide {
-        flex: 0 0 350px;
-        max-width: 350px;
+        flex: 0 0 310px;
+        max-width: 310px;
+        @include breakpoint(medium) {
+            flex: 0 0 315px;
+            max-width: 315px;
+        }
         border-radius: 1rem;
         overflow: hidden;
 

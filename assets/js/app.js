@@ -64,22 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     
         lastScrollPosition = currentScrollPosition;
-        // // Check scroll direction
-        // if (currentScrollPosition > lastScrollPosition) {
-        //     // Scrolling down
-        //     header.classList.remove('visible'); // Hide header
-        // } else {
-        //     // Scrolling up
-        //     header.classList.add('visible'); // Show header
-
-        //     // Add white background if scrolled past a certain point
-        //     if (currentScrollPosition > 100) {
-        //         header.classList.remove('transparent');
-        //     } else {
-        //         header.classList.add('transparent'); // Make header transparent again
-        //     }
-        // }
-        
+       
     });
 
     // Announcements Modal
@@ -197,6 +182,52 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-
-   
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Fetch weather data
+    async function fetchWeatherData() {
+     const apiKey = '07d9b4d8-5082-4a41-9f46-e394313327f7';
+     const stationId = '162786';
+     const apiUrl = `https://swd.weatherflow.com/swd/rest/observations/station/${stationId}?token=${apiKey}`;
+ 
+     try {
+         const response = await fetch(apiUrl);
+         const data = await response.json();
+ 
+         // Extract temperature and wind speed
+         const temperature = data.obs[0].air_temperature; // Temperature in Celsius
+         const windSpeed = data.obs[0].wind_avg; // Wind speed in m/s
+ 
+         // Convert temperature to Fahrenheit
+         const temperatureF = (temperature * 9) / 5 + 32;
+ 
+         // Convert wind speed to knots
+         const windSpeedKnots = (windSpeed * 1.94384).toFixed(1);
+ 
+         // Update the DOM
+         document.getElementById('temperature').innerHTML = `${Math.round(temperatureF)}&deg;`;
+         document.getElementById('wind-speed').innerHTML = `${windSpeedKnots}KT`;
+ 
+         // Update the weather icon (you can customize this logic)
+         const weatherIcon = document.getElementById('weather-icon');
+         if (data.obs[0].precip_total > 0) {
+             weatherIcon.src = 'imgs/misc/Rain.png';
+             weatherIcon.alt = 'Rain icon';
+         } else if (data.obs[0].solar_radiation > 800) {
+             weatherIcon.src = 'imgs/misc/Sunny.png';
+             weatherIcon.alt = 'Sunny icon';
+         } else {
+             weatherIcon.src = 'imgs/misc/Partly-cloudy.png';
+             weatherIcon.alt = 'Partly cloudy icon';
+         }
+     } catch (error) {
+         console.error('Error fetching weather data:', error);
+     }
+ }
+ 
+ fetchWeatherData();
+ 
+ // Optionally, refresh weather data every 10 minutes
+ setInterval(fetchWeatherData, 600000);
+ });

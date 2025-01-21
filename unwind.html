@@ -6,10 +6,17 @@
     <meta name="description" content="Shoreline Lake represents a beautiful respite in Silicon Valley with nature, food and beverages on hand.">
     <title>Shoreline Lake - Unwind</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -91,19 +98,23 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -133,11 +144,11 @@
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/photo_of_cheese_cake_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/toast_with_salmon_and_capers_330.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/photo_of_cheese_cake_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/photo_of_cheese_cake_330.jpg" 
-                                alt="A sign that read cheese cakes, with some cheese cakes in the background" title="A sign that read cheese cakes, with some cheese cakes in the background">
+                                <source srcset="imgs/cards/toast_with_salmon_and_capers_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/toast_with_salmon_and_capers_330.jpg" 
+                                alt="Two slices of bread topped with salmon and capers." title="Two slices of bread topped with salmon and capers.">
                             </picture>
                         </div>
                     </article>
@@ -145,11 +156,11 @@
                         <div class="card__img">
                             <picture>
                                 <!-- For mobile devices -->
-                                <source srcset="imgs/cards/an_assortment_of_cold_bottles_330.jpg" media="(max-width: 767px)">
+                                <source srcset="imgs/cards/wine_bottles_on_display_330.jpg" media="(max-width: 767px)">
                                 <!-- For larger screens -->
-                                <source srcset="imgs/cards/an_assortment_of_cold_bottles_250.jpg" media="(min-width: 768px)">
-                                <img src="imgs/cards/an_assortment_of_cold_bottles_330.jpg" 
-                                alt="an assortment of cold bottles." title="an assortment of cold bottles">
+                                <source srcset="imgs/cards/wine_bottles_on_display_250.jpg" media="(min-width: 768px)">
+                                <img src="imgs/cards/wine_bottles_on_display_330.jpg" 
+                                alt="An assormant of wine bottles on display" title="An assormant of wine bottles on display">
                             </picture>
                             <!-- <img src="imgs/cards/an-assortment-of-cold-bottles.jpg" alt="an assortment of cold bottles." title="an assortment of cold bottles"> -->
                         </div>
@@ -183,16 +194,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

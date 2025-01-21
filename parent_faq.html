@@ -7,10 +7,17 @@
     ">
     <title>Shoreline Lake - Parent FAQ</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -87,19 +94,23 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -115,7 +126,7 @@
                         <div class="accordion">
                             <div class="accordion__header">
                                 <h4>
-                                    What about Corona?
+                                    What about COVID?
                                 </h4>
                                 <span>
                                     &#8964;
@@ -125,7 +136,7 @@
                         <hr>
                         <ul class="accordion__items">
                             <li class="accordion__item">
-                                <h6>What about Corona, or other transmittable illnesses?</h6>
+                                <h6>What about COVID, or other transmittable illnesses?</h6>
                                 <p class="mt-large">Camps at Shoreline Lake follow guidance and requirements set by the CDC, as well as State and local agencies.</p>
                             </li>
                         </ul>
@@ -143,7 +154,7 @@
                         <hr>
                         <ul class="accordion__items">
                             <h6>What class should I enroll my child in?</h6>
-                            p>Find brief descriptions of each of our camp programs below, with links to each of their respective pages for more details.</p>
+                            <p>Find brief descriptions of each of our camp programs below, with links to each of their respective pages for more details.</p>
 
                             <p>Trying to find the appropriate placement for your child in a Windsurfing and/or Sailing camp? <a href="imgs/pdfs/ShorelineCampProgression.pdf" target="_blank">View the standard skills progression here.</a> This chart shows several possible routes for progressing through the various levels of camps.</p>
 
@@ -290,7 +301,7 @@
                             <h6>Camper Cash Cards</h6>
                             <p>Purchase a Camper Cash Card at the Boathouse, so you don't have to send your camper with money. Any leftover balance after camp is over can still be used towards any purchases at the Boathouse or Bistro!</p>
                             <p>Purchase a Camper Cash Card online <a href="https://www.toasttab.com/shoreline-lake-american-bistro-3160-n-shoreline-blvd">here</a>.</p>
-                            p>In addition, boardshorts, rash guards, and other clothing items can be found at a variety of stores, including Walmart.</p>
+                            <p>In addition, boardshorts, rash guards, and other clothing items can be found at a variety of stores, including Walmart.</p>
                             <p>However, if you prefer going to specialty watersports stores, the following are just a few in the area (and remember to mention we sent you): Helm of Sun Valley (333 N. Amphlett Blvd. in San Mateo, <a href="tel;1-650-344-2711">650.344.2711</a>) and Boardsports at Coyote Point Park (1603 Coyote Point Dr. in San Mateo, <a href="tel:1-415-385-1224">415.385.1224</a>) sells windsurfers and other windsurfing related gear.</p>
             
                         </ul>
@@ -344,7 +355,7 @@
                             <p>If you have to pick a camper up early or bring them very late, please aim for your camp’s lunchtime. Otherwise, the entire camp may be on the water when you arrive.</p>
                         </ul>
                     </div>
-                  <div class="accordion">
+                 
                     <div class="accordion">
                         <div class="accordion__header">
                             <h4>
@@ -473,16 +484,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

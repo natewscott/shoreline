@@ -95,22 +95,26 @@
                 all ages, all skill levels
             </span> -->
         </div>
-        <article class="weather--icons">
-            <ul class="weather__info">
-                <li class="weather__detail">
-                    <span class="weather__icon">
-                        <img src="imgs/misc/Partly-cloudy.png" alt="">
-                    </span>
-                    80&deg;
-                </li>
-                <li class="weather__detail">
-                    <span class="weather__icon">
-                        <img src="imgs/misc/Wind.png" alt="">
-                    </span>
-                    12KT
-                </li>
+          <article class="weather--icons">
+                <ul class="weather__info">
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
             </ul>
-           </article>
+               </article>
     </section>
     <section class="main__content">
         <section class="inner__container inner__container--grid">
@@ -160,12 +164,10 @@
                  
             </article>
             <aside class="class-info">
-                <!-- <div class="class-info__header">
-                    <h4>Windsurfing: Level II $225</h4>
+                 <div class="class-info__header">
+                    <h4>Membership Program</h4>
                     <hr>
-                    <p>
-                        1 day class 1:30pm-5:30pm
-                    </p>
+                    
                     
                     <hr>
                 </div>
@@ -186,6 +188,9 @@
                             <option value="fall">
                                 Fall 2025
                             </option>
+                            <option value="full">
+                                Full Year
+                            </option>
                         </select>
                         </div>
                     </div>
@@ -193,45 +198,55 @@
                      <div class="session-info" id="session-dates" aria-live="polite">
                         <ul class="session-info__dates mb-large" id="spring" data-session="spring" aria-hidden="true">
                             <li class="session-info__date">
-                                February 22
+                                Beginner $300
                             </li>
                             <li class="session-info__date">
-                                March 8
+                                Intermediate $350
                             </li>
                             <li class="session-info__date">
-                                April 12
+                               Advanced $380
                             </li>
-                            <li class="session-info__date">
-                                May 10
-                            </li>
+                           
                         </ul>
                         <ul class="session-info__dates mb-large" id="summer" data-session="summer" aria-hidden="true">
                             <li class="session-info__date">
-                                June 14
+                                Beginner $500
                             </li>
                             <li class="session-info__date">
-                                July 12
+                                Intermediate $550
                             </li>
                             <li class="session-info__date">
-                                August 9
+                                Advanced $580
                             </li>
-                            <li class="session-info__date">
-                                September 13
-                            </li>
+                            
                         </ul>
                         <ul class="session-info__dates mb-large" id="fall" data-session="fall" aria-hidden="true">
                             <li class="session-info__date">
-                                October 11
+                                Beginner $100
                             </li>
                             <li class="session-info__date">
-                                November 8
+                                Intermediate $150
+                            </li>
+                            <li class="session-info__date">
+                                Advanced $180
+                            </li>
+                        </ul>
+                        <ul class="session-info__dates mb-large" id="full" data-session="fall" aria-hidden="true">
+                            <li class="session-info__date">
+                                Beginner $810
+                            </li>
+                            <li class="session-info__date">
+                                Intermediate $945
+                            </li>
+                            <li class="session-info__date">
+                                Advanced $1026
                             </li>
                         </ul>
                     </div> 
-                    <a class="btn btn--primary" style="color:#101820; font-size: 16px;" href="https://www.amilia.com/store/en/shoreline-lake/shop/programs">
+                    <!-- <a class="btn btn--primary" style="color:#101820; font-size: 16px;" href="https://www.amilia.com/store/en/shoreline-lake/shop/programs">
                         Register now
-                    </a>
-                </div> -->
+                    </a> -->
+                </div>
                 <a class="btn btn--primary" style="color:#101820; font-size: 16px;" href="https://www.amilia.com/store/en/shoreline-lake/shop/programs" target="_blank">
                     Purchase a Membership
                 </a>
@@ -262,12 +277,12 @@
                 
                 <ul class="social__icons">
                     <li class="social__icon">
-                        <a href="">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
                             <img src="imgs/misc/facebook-icon.png" alt="">
                         </a>
                     </li>
                     <li class="social__icon">
-                        <a href="">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
                             <img src="imgs/misc/instagram-icon.png" alt="">
                         </a>
                     </li>

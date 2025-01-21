@@ -6,10 +6,17 @@
     <meta name="description" content="Shoreline Lake is in the center of Silicon Valley and easily reached by car, bike, or public transportation.">
     <title>Shoreline Lake - Contact</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -77,7 +84,7 @@
     </header>
     <main class="main">
         <section class="hero" >
-            <img src="imgs/hero/shoreline_boathouse_with_boats_lined_up.jpg" alt=" " class="hero__vid">
+            <img src="imgs/hero/instructor_showing_student_how _to_use_a_board.jpg" alt=" " class="hero__vid">
           
             <div class="hero__titles">
                 <h1>
@@ -89,19 +96,23 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -118,13 +129,13 @@
                        Address: 3160 N. Shoreline Blvd. Mountain View, CA 94043
                     </address>
                     <p>
-                        Boathouse: <a href="tel:">(650) 695-1745</a>
+                        Boathouse: <a href="tel:+1-650-965-7474">(650) 965-7474</a>
                     </p>
                     <p>
-                        American Bistro: <a href="tel:">(650) 695-1745</a>
+                        American Bistro: <a href="tel:+1-650-965-1745">(650) 965-1745</a>
                     </p>
                     <p>
-                        Events: <a href="tel:">(650) 695-3779</a>
+                        Events: <a href="tel:+1-650-965-3779">(650) 965-3779</a>
                     </p>
                     <hr>
                     <h4>
@@ -149,7 +160,7 @@
                             We are open 7 days a week.
                         </li>
                         <li>
-                            We have extended hours for <a href="#">July 4th.</a>
+                            We have extended hours for <a href="upcoming_events.html">July 4th.</a>
                         </li>
                         <li>
                             We close at 3pm on Thanksgiving Day. (Open regular hours on Friday)
@@ -170,13 +181,13 @@
                         Public Transportation
                     </h4>
                     <p>
-                        For real-time, Bay Area-wide, and multi-system public transit info, and for help with planning your trip, check out <a href="https://511.org/" target="_blank">511.org</a>  or its mobile counterpart <a href="https://mobile.usablenet.com/mt/www.511.org" target="_blank">(m.551.org).</a> 
+                        For real-time, Bay Area-wide, and multi-system public transit info, and for help with planning your trip, check out <a href="https://511.org/" target="_blank">511.org</a>.
                     </p>
                     <p>
                         Overall, we suggest taking a taxi or CalTrain to the San Antonio station (For current CalTrain rates on <a href="https://www.caltrain.com/fares/ticket-types" target="_blank">one-way travel</a> and day passes, please refer to the CalTrain  <a href="https://www.caltrain.com/fares" target="_blank">Fare Chart</a> and <a href="https://www.caltrain.com/stations-zones" target="_blank">System Zone Map.).</a>
                     </p>
                     <p>
-                        From San Antonio station, walk southwest on Pacchetti Way a few blocks to the bus station on California Street (See Route Map and Fare info for additional details). Catch the Santa Clara VTA Bus 40/La Avenida. The VTA also has a <a href="https://mobile.usablenet.com/mt/www.511.org" target="_blank">Real-Time info</a> page if you need it.
+                        From San Antonio station, walk southwest on Pacchetti Way a few blocks to the bus station on California Street (See Route Map and Fare info for additional details). Catch the Santa Clara VTA Bus 40/La Avenida. The VTA also has a <a href="https://www.vta.org/trip-planner" target="_blank">Real-Time info</a> page if you need it.
                     </p>
                     <p>
                         Disembark at Charleston and Amphitheatre Parkway (The walk to Shoreline Lake from the bus stop is less than a mile.).
@@ -196,10 +207,7 @@
                     </h4>
                     <hr>
                     <p>
-                        There is a daily launch fee of $7 per vessel for anyone using their own equipment on the lake. Fee must be paid at the Boathouse before launching. An annual pass is also available. PFDs are required for all lake users; if you don't have your own PFD you may rent them for $5 each.
-                    </p>
-                    <p>
-                        The recent construction at Shoreline Lake has been completed. The dock and launch ramp have been reopened and are available for launching.
+                        There is a daily launch fee of $7 per vessel or a yearly launch fee of $150 for anyone using their own equipment on the lake. Fee must be paid at the Boathouse before launching. An annual pass is also available. PFDs are required for all lake users; if you don't have your own PFD you may rent them for $5 each.
                     </p>
                 </article>
                 <aside class="class-info">
@@ -218,16 +226,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

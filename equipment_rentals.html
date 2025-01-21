@@ -96,21 +96,25 @@
             </span> -->
         </div>
         <article class="weather--icons">
-            <ul class="weather__info">
-                <li class="weather__detail">
-                    <span class="weather__icon">
-                        <img src="imgs/misc/Partly-cloudy.png" alt="">
-                    </span>
-                    80&deg;
-                </li>
-                <li class="weather__detail">
-                    <span class="weather__icon">
-                        <img src="imgs/misc/Wind.png" alt="">
-                    </span>
-                    12KT
-                </li>
-            </ul>
-           </article>
+                <ul class="weather__info">
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+                </ul>
+               </article>
     </section>
     <section class="main__content">
         <section class="inner__container inner__container--grid">
@@ -120,25 +124,29 @@
                     Book Rentals Online
                 </h2>
                 <p>
-                    All rental bookings are non-refundable.
-                </p>
-                <p>
-                    All participants must be a minumum of 2 years old.
-                </p>
-                <p>
-                    Rentals booked through this page do not include the Fourth of July fireworks viewing. If you would like to book a boat for the fireworks please use the registration page here.
-                </p>
-                <p>
                     <a href="https://waiver.smartwaiver.com/w/5eebd8a9189e7/web/" target="_blank">
                         E-Sign the Waiver
                     </a>
                 </p>
                 <hr>
                 <p>
-                    <a href="https://order.toasttab.com/online/shoreline-lake-american-bistro-3160-n-shoreline-blvd" target="_blank">
-                       Book Rentals Online
+                    <a href="https://order.toasttab.com/online/shoreline-lake-american-bistro-3160-n-shoreline-blvd" target="_blank" class="btn btn--primary btn--link">
+                        Book Now
                     </a>
+                    <!-- <a href="https://order.toasttab.com/online/shoreline-lake-american-bistro-3160-n-shoreline-blvd" target="_blank">
+                       Book Rentals Online
+                    </a> -->
                 </p>
+                <p>
+                    All rental bookings are non-refundable.
+                </p>
+                <p>
+                    All participants must be a minumum of 2 years old.
+                </p>
+                <p>
+                    Rentals booked through this page do not include the Fourth of July fireworks viewing. If you would like to book a boat for the fireworks please use the <a href="https://www.amilia.com/store/en/shoreline-lake/shop/programs" target="_blank">registration page here.</a>
+                </p>
+               
                 
                 <article class="image-slider mb-giant mt-giant">
                     <!-- <div class="image-slider__wrapper"> -->
@@ -167,12 +175,12 @@
                 
             </article>
             <aside class="class-info">
-                <div class="class-info__header">
+                <!-- <div class="class-info__header">
                     <h4>Equipment Rentals</h4>
                    
                     <hr>
-                </div>
-                <div class="class-info__body form">
+                </div> -->
+                <!-- <div class="class-info__body form">
                     <div class="form__row">
                         <div class="form__group">
                             <label for="session-selection" class="form__label">Select equipment</label>
@@ -186,9 +194,6 @@
                             <option value="summer">
                                 Windsurfing
                             </option>
-                            <!-- <option value="fall">
-                                Fall 2025
-                            </option> -->
                         </select>
                         </div>
                     </div>
@@ -196,38 +201,38 @@
                      <div class="session-info" id="session-dates" aria-live="polite">
                         <ul class="session-info__dates" id="spring" data-session="spring" aria-hidden="true">
                             <li class="session-info__date">
-                                Pedalboat	people: 4	hourely: $35
+                                Pedalboat (people: 4, hourly: $35)
                             </li>
                             <li class="session-info__date">
-                                Rowboat	people: 3	hourely: $35
+                                Rowboat (people: 3,	hourly: $35)
                             </li>
                             <li class="session-info__date">
-                                Canoe	people: 4	hourely: $35
+                                Canoe (people: 4,	hourly: $35)
                             </li>
                             <li class="session-info__date">
-                                Single Kayak	people: 1	hourely: $30
+                                Single Kayak (people: 1,	hourly: $30)
                             </li>
                             <li class="session-info__date">
-                                Enclosed Kayak	people: 1	hourely: $32
+                                Enclosed Kayak (people: 1,	hourly: $32)
                             </li>
                             <li class="session-info__date">
-                                Double Kayak	people: 2	hourely: $40
+                                Double Kayak (people: 2,	hourly: $40)
                             </li>
                             <li class="session-info__date">
-                                Sailboat	people: 4	hourely: $50
+                                Sailboat (people: 4,	hourly: $50)
                             </li>
                             <li class="session-info__date">
-                                Bicycle	people: 1	hourely: $20
+                                Bicycle (people: 1,	hourly: $20)
                             </li>
                             <li class="session-info__date">
-                                Tandem Bicycle	people: 2	hourely: $30
+                                Tandem Bicycle (people: 2,	hourly: $30)
                             </li>
                             <li class="session-info__date">
-                                Kid's Scooter	people: 1	hourely: $12
+                                Kid's Scooter (people: 1,	hourly: $12)
                             </li>
 
                             <li class="session-info__date">
-                                Stand Up Paddleboard	people: 1	hourely: $35
+                                Stand Up Paddleboard (people: 1,	hourly: $35)
                             </li>
                            
                             
@@ -235,34 +240,22 @@
                         </ul>
                         <ul class="session-info__dates" id="summer" data-session="summer" aria-hidden="true">
                             <li class="session-info__date">
-                                Standard	people: 1	2 hours: $50
+                                Standard (1 person, 2 hours: $50)
                             </li>
                             <li class="session-info__date">
-                                High Performance	people: 1	2 hours: $60
+                                High Performance (1 person, 2 hours: $60)
                             </li>
                          
                         </ul>
                       
                     </div> 
-                    <!-- <button class="btn btn--primary"> -->
+                   
                         <a href="https://order.toasttab.com/online/shoreline-lake-american-bistro-3160-n-shoreline-blvd" target="_blank" class="btn btn--primary btn--link">
                             Book Now
                         </a>
                        
-                    <!-- </button> -->
-                </div>
-               
-               <!-- <div class="class-info__similar mt-large">
-                <hr>
-                <h5>
-                    <a href="sailing.html">
-                        Browse Sailing Section
-                    </a>
-                    
-                </h5>
-               
-              
-               </div> -->
+                  
+                </div> -->
 
               </aside> 
         </section>
@@ -279,12 +272,12 @@
                 
                 <ul class="social__icons">
                     <li class="social__icon">
-                        <a href="">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
                             <img src="imgs/misc/facebook-icon.png" alt="">
                         </a>
                     </li>
                     <li class="social__icon">
-                        <a href="">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
                             <img src="imgs/misc/instagram-icon.png" alt="">
                         </a>
                     </li>

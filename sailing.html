@@ -97,19 +97,23 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -150,13 +154,12 @@
                     <div class="card__img">
                         <picture>
                             <!-- For mobile devices -->
-                            <source srcset="imgs/cards/intermediate_sailors_on_shoreline_lake_330.jpg" media="(max-width: 767px)">
+                            <source srcset="imgs/cards/a_man_in_a_boat_330.jpg" media="(max-width: 767px)">
                             <!-- For larger screens -->
-                            <source srcset="imgs/cards/intermediate_sailors_on_shoreline_lake_250.jpg" media="(min-width: 768px)">
-                            <img src="imgs/cards/intermediate_sailors_on_shoreline_lake_330.jpg" 
-                            alt="A woman saling in a boat on shoreline lake." title="intermediate sailing at shoreline lake.">
-                        </picture>
-                        <!-- <img src="imgs/cards/intermediate-sailors-at-shoreline-lake.jpg" alt="intermediate sailors at shoreline lake." title="intermediate sailors at shoreline lake."> -->
+                            <source srcset="imgs/cards/a_man_in_a_boat_250.jpg" media="(min-width: 768px)">
+                            <img src="imgs/cards/a_man_in_a_boat_330.jpg" 
+                            alt="A man saling in a boat on shoreline lake." title="intermediate sailing at shoreline lake.">
+                        </picture>>
                     </div>
                     <div class="card__details card__details--left">
                         <h2>
@@ -179,7 +182,7 @@
                            Advanced Sailing
                         </h2>
                         <p>
-                            LIf you're an experienced sailor (kid or adult) who wants to get into single handed sailing, you'll get the right challenge via Shoreline Lake's Advanced Course – an introduction to Laser class sailing.
+                            If you're an experienced sailor (kid or adult) who wants to get into single handed sailing, you'll get the right challenge via Shoreline Lake's Advanced Course – an introduction to Laser class sailing.
                         </p>
                         <a href="advanced_sailing.html" class="btn btn--secondary btn--link">
                             Explore
@@ -230,7 +233,7 @@
                            Private Group
                         </h2>
                         <p>
-                            Private group sailing clinic options are available for companies and other organizations for all skill levels – with a focus on enjoying the activity, while learning something new.
+                            Private group sailing clinic options are available for companies and other organizations, at all skill levels – with a focus on enjoying the activity, while learning something new.
                         </p>
                         <a href="group_clinics.html" class="btn btn--secondary btn--link">
                             Explore
@@ -268,16 +271,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">

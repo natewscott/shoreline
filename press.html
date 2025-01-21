@@ -6,10 +6,17 @@
     <meta name="description" content="Shoreline Lake in the News, Resources Guides, Press Releases, Fact Sheet, and more.">
     <title>Shoreline Lake - Contact</title>
 
-    <!-- Fonts -->
+   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
@@ -17,13 +24,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
+        <div class="header__logo header__logo--white">
             <a href="index.html">
                 <img  src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
-            
         </div>
-       
+        <div class="header__logo header__logo--normal">
+            <a href="index.html">
+                <img  src="imgs/misc/sl_logo.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+            </a>
+        </div>
      <nav class="nav" id="nav-menu">
         <!-- <img src="imgs/misc/index-bg.jpg" alt=""> -->
         <div class="nav__logo--mobile">
@@ -86,19 +96,23 @@
             </div>
             <article class="weather--icons">
                 <ul class="weather__info">
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Partly-cloudy.png" alt="">
-                        </span>
-                        80&deg;
-                    </li>
-                    <li class="weather__detail">
-                        <span class="weather__icon">
-                            <img src="imgs/misc/Wind.png" alt="">
-                        </span>
-                        12KT
-                    </li>
-                </ul>
+                 <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon">
+                                <img src="imgs/misc/Partly-cloudy.png" alt="Partly cloudy icon">
+                            </span>
+                            <span id="temperature">80&deg;</span>
+                        </li>
+                    </a>
+                    <a href="https://tempestwx.com/station/162786/" target="_blank" >
+                        <li class="weather__detail">
+                            <span class="weather__icon" style="margin: 0 auto;">
+                                <img src="imgs/misc/Wind.png" alt="Wind icon">
+                            </span>
+                            <span id="wind-speed">12KT</span>
+                        </li>
+                    </a>
+            </ul>
                </article>
         </section>
         <section class="main__content">
@@ -111,7 +125,7 @@
                     <p>Shoreline Lake is one of the few places that offers a true respite in Silicon Valley. Well worth visiting, it's the perfect place for a break from the office, lunch, or a few hours spent learning how to sail.</p>
                     <p>With a diverse range of classes, equipment for rent, and activities, Shoreline Lake's Boathouse and American Bistro has something to offer everyone. Of course, no requirement exists to do anything other than enjoy the view and take in the tranquility that is Shoreline Lake.</p>
                     <p>If you would like to get more background information though, as well as objective third-party perspectives, on Shoreline's many activities (and possibilities), please see the news stories and organizational information below.</p>
-                    <p>For press-related inquiries, please contact Maria Gonzalez, of the <a href="" target="_blank">Gonzberg Agency,</a> at <a href="">(415) 930-9103 </a>or by <a href="">email.</a></p>
+                    <p>For press-related inquiries, please contact Maria Gonzalez, of the <a href="https://gonzbergagency.com" target="_blank">Gonzberg Agency,</a> at <a href="tel:1-415-930-9103">(415) 930-9103 </a>or by <a href="mailTo:maria.gonzalez@gonzbergagency.com">email.</a></p>
                     <article>
                         <div class="accordion">
                             <div class="accordion__header">
@@ -768,6 +782,29 @@
                     <div class="accordion">
                         <div class="accordion__header">
                             <h4>
+                                Recent Newsletters
+                            </h4>
+                            <span>
+                                &#8964;
+                            </span>
+                        </div>
+                     
+                        <hr>
+                        <ul class="accordion__items">
+                        <style type="text/css">
+                            .display_archive {font-family: arial,verdana; font-size: 18px;}
+                          .campaign {line-height: 125%; margin: 5px;}
+                          </style>
+                          <script
+                            language="javascript"
+                            src="https://shorelinelake.us1.list-manage.com/generate-js/?u=dbab237e2789ca363e52374b6&show=10&fid=65137"
+                                            type="text/javascript"
+                          ></script>
+                        </ul>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <h4>
                                 Fact Sheet
                             </h4>
                             <span>
@@ -871,9 +908,9 @@
                             <img src="imgs/pdfs/press/DSC_5924.jpg" alt="Christina" class="bio-img">
                             </li>
                             <li class="accordion__item--flex">
-                                Christina Ferrari
-                                President, Silicon Shores Corporation
-                                Ms. Ferrari’s Bio (PDF)
+                                Christina Ferrari <br>
+                                President, Silicon Shores Corporation <br>
+                                <a href="https://shorelinelake.com/img/pdfs/press/Shoreline.bio.Christina.Ferrari.pdf" target="_blank">Ms. Ferrari’s Bio (PDF) </a><br>
                                 (high resolution photo – right click to download)
                             </li>
                         </ul>
@@ -894,16 +931,16 @@
                     </div>
                     
                     <ul class="social__icons">
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/facebook-icon.png" alt="">
-                            </a>
-                        </li>
-                        <li class="social__icon">
-                            <a href="">
-                                <img src="imgs/misc/instagram-icon.png" alt="">
-                            </a>
-                        </li>
+                          <li class="social__icon">
+                        <a href="https://www.facebook.com/ShorelineParkLake" target="_blank">
+                            <img src="imgs/misc/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social__icon">
+                        <a href="https://www.instagram.com/shorelinelake/?hl=en" target="blank">
+                            <img src="imgs/misc/instagram-icon.png" alt="">
+                        </a>
+                    </li>
                     </ul>
                 </article>
                 <article class="footer__privacy">
