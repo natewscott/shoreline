@@ -56,6 +56,7 @@
         line-height: 1.2;
         z-index: 2;
     }
+
     &__links {
         position: absolute;
         top: 50%;
@@ -65,9 +66,18 @@
         flex-direction: column;
         gap: 2rem;
 
+        @media screen and (orientation: landscape) {
+            flex-direction: row;
+        }
+
+        @include breakpoint (large) {
+            flex-direction: column;
+        }
+
         &.active { 
             display: none;
         }
+
         & {
             @include breakpoint(medium) {
                 left: 4rem;

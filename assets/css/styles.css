@@ -434,6 +434,7 @@ body {
 
 .no-scroll {
   overflow: hidden;
+  touch-action: none;
 }
 
 main {
@@ -1017,6 +1018,11 @@ hr {
   margin-right: 1.6rem;
   margin-bottom: 2.4rem;
 }
+@media screen and (orientation: landscape) {
+  .nav__item {
+    margin-bottom: 0;
+  }
+}
 .nav__item a {
   color: rgb(242.8, 245.85, 248.9);
   letter-spacing: 1.5px;
@@ -1117,6 +1123,11 @@ hr {
   padding-bottom: 1.6rem;
   border-bottom: 1px solid rgb(242.8, 245.85, 248.9);
 }
+@media screen and (orientation: landscape) {
+  .nav__item a.active {
+    border-bottom: none;
+  }
+}
 
 .hero {
   position: relative;
@@ -1178,6 +1189,16 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media screen and (orientation: landscape) {
+  .hero__links {
+    flex-direction: row;
+  }
+}
+@media (min-width: 62rem) {
+  .hero__links {
+    flex-direction: column;
+  }
 }
 .hero__links.active {
   display: none;
@@ -1357,12 +1378,23 @@ hr {
 .footer__privacy ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 95%;
+  margin: 0 auto;
   margin-top: 2.4rem;
 }
+@media (min-width: 48rem) {
+  .footer__privacy ul {
+    width: 100%;
+  }
+}
 .footer__privacy ul li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-right: 2.4rem;
+}
+.footer__privacy ul li a {
+  color: #101820;
 }
 .footer__privacy ul li:last-of-type {
   margin-right: 0;

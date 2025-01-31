@@ -74,11 +74,21 @@
         ul {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
+            width:95%;
+            margin: 0 auto;
             margin-top: 2.4rem;
+            @include breakpoint(medium) {
+                width: 100%;
+            }
             li {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 margin-right: 2.4rem;
+
+                a {
+                    color: $color-dark;
+                }
 
                 &:last-of-type {
                     margin-right: 0;

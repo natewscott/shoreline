@@ -67,45 +67,50 @@ document.addEventListener('DOMContentLoaded', () => {
        
     });
 
-    // Announcements Modal
-    const announcement = document.querySelector('.announcements');
-
-    if (announcement) {
-        const header = announcement.querySelector('.announcements__header');
+   // Function to set the initial state based on aria-expanded
+   const setInitialState = () => {
+    const announcements = document.querySelectorAll('.announcements');
+    announcements.forEach(announcement => {
+        const isExpanded = announcement.getAttribute('aria-expanded') === 'true';
         const details = announcement.querySelector('.announcements__details');
-        const closedIcon = header.querySelector('.announcements__closed');
-        const openIcon = header.querySelector('.announcements__open');
+        const closedIcon = announcement.querySelector('.announcements__closed');
+        const openIcon = announcement.querySelector('.announcements__open');
+        
+        details.style.display = isExpanded ? 'block' : 'none';
+        closedIcon.style.display = isExpanded ? 'none' : 'flex';
+        openIcon.style.display = isExpanded ? 'inline-block' : 'none';
+    });
+};
 
-        // Function to set the initial state based on aria-expanded
-        function setInitialState() {
-            const isExpanded = announcement.getAttribute('aria-expanded') === 'true';
-            details.style.display = isExpanded ? 'block' : 'none';
-            closedIcon.style.display = isExpanded ? 'none' : 'flex';
-            openIcon.style.display = isExpanded ? 'inline-block' : 'none';
+// Toggle announcement visibility
+const toggleAnnouncement = (event) => {
+    const announcement = event.currentTarget.closest('.announcements');
+    const isExpanded = announcement.getAttribute('aria-expanded') === 'true';
+    
+    announcement.setAttribute('aria-expanded', !isExpanded);
+    const details = announcement.querySelector('.announcements__details');
+    const closedIcon = announcement.querySelector('.announcements__closed');
+    const openIcon = announcement.querySelector('.announcements__open');
+
+    details.style.display = isExpanded ? 'none' : 'block';
+    closedIcon.style.display = isExpanded ? 'flex' : 'none';
+    openIcon.style.display = isExpanded ? 'none' : 'inline-block';
+};
+
+// Initialize the state on page load
+setInitialState();
+
+// Add click and keypress events for accessibility
+const headers = document.querySelectorAll('.announcements__header');
+headers.forEach(header => {
+    header.addEventListener('click', toggleAnnouncement);
+    header.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleAnnouncement(event);
         }
-
-        // Toggle announcement visibility
-        function toggleAnnouncement() {
-            const isExpanded = announcement.getAttribute('aria-expanded') === 'true';
-            announcement.setAttribute('aria-expanded', !isExpanded);
-
-            details.style.display = isExpanded ? 'none' : 'block';
-            closedIcon.style.display = isExpanded ? 'flex' : 'none';
-            openIcon.style.display = isExpanded ? 'none' : 'inline-block';
-        }
-
-        // Initialize the state on page load
-        setInitialState();
-
-        // Add click and keypress events for accessibility
-        header.addEventListener('click', toggleAnnouncement);
-        header.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault(); // Prevent scrolling on space press
-                toggleAnnouncement();
-            }
-        });
-    }
+    });
+});
     const accordions = document.querySelectorAll('.accordion');
 
     accordions.forEach((accordion) => {
@@ -160,28 +165,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    //Drop Down menu for session info
-    const sessionSelection = document.getElementById('session-selection');
-    const dateLists = document.querySelectorAll('.session-info__dates');
+    function setupSessionSelector(selectId, sessionContainerId) {
+        const sessionSelect = document.getElementById(selectId);
+        const sessionContainers = document.querySelectorAll(`#${sessionContainerId} .session-info__dates`);
 
-    sessionSelection.addEventListener('change', () => {
-        const selectedSession = sessionSelection.value;
+        sessionSelect.addEventListener('change', (event) => {
+            const selectedSession = event.target.value;
 
-        // Hide all date lists
-        dateLists.forEach(list => {
-            list.style.display = 'none';
-            list.setAttribute('aria-hidden', 'true');
-        });
+            // Hide all session lists
+            sessionContainers.forEach(container => {
+                container.setAttribute('aria-hidden', 'true');
+                container.style.display = 'none';
+            });
 
-        // Show the relevant date list if a session is selected
-        if (selectedSession) {
-            const selectedList = document.querySelector(`.session-info__dates[data-session="${selectedSession}"]`);
-            if (selectedList) {
-                selectedList.style.display = 'block';
-                selectedList.setAttribute('aria-hidden', 'false');
+            // Show the selected session's dates
+            if (selectedSession) {
+                const selectedDates = document.querySelector(`#${sessionContainerId} [data-session="${selectedSession}"]`);
+                if (selectedDates) {
+                    selectedDates.setAttribute('aria-hidden', 'false');
+                    selectedDates.style.display = 'block';
+                }
             }
-        }
-    });
+        });
+    }
+
+    setupSessionSelector('session-selection', 'session-dates');
+    setupSessionSelector('kids-session-selection', 'session-dates');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -231,3 +240,17 @@ document.addEventListener('DOMContentLoaded', () => {
  // Optionally, refresh weather data every 10 minutes
  setInterval(fetchWeatherData, 600000);
  });
+
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
