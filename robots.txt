@@ -5,3 +5,4 @@ Disallow: /media/media.html
 Disallow: /campshoreline/
 Disallow: /download/
 Disallow: /beta/
+Disallow: /book_rentals.html
