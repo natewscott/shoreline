@@ -8,7 +8,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link defer href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- favicon  -->
     <link rel="icon" type="image/png" href="imgs/favicon/favicon-96x96.png" sizes="96x96" />
@@ -18,29 +18,16 @@
     <link rel="manifest" href="imgs/favicon/site.webmanifest" />
     <!-- Styles -->
       <!-- CSS Reset -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"></link>
      <link rel="stylesheet" href="assets/css/styles.css">
-     <!-- Google Tag Manager -->
-    <script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TBGP32');</script>
-        <!-- End Google Tag Manager -->
-        
-      
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TBGP32"
-        height="0" width="0"
-        style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    
+   
 </head>
 <body>
      <header class="header">
         <div class="header__logo">
             <a href="index.html">
-                <img  src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
+                <img  src="imgs/misc/SL_logo-white-scaled.webp" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
             
         </div>
@@ -52,7 +39,7 @@
                 <img src="imgs/misc/SL_logo-white.png" alt="Shoreline Lake logo" title="Shoreline Lake logo">
             </a>
         </div>
-        <img src="imgs/misc/index-bg.jpg" alt="Background image" class="nav__background">
+        <img src="imgs/misc/index-bg.webp" alt="Background image" class="nav__background">
         <ul class="nav__items">
             <li class="nav__item">
                 <a href="play.html">
@@ -102,9 +89,6 @@
             </video>
            
            <div class="hero__links">
-
-<!-- HIDE ANNOUNCEMENTS 022225 JA
-
             <article class="announcements announcements--hero" aria-expanded="false">
                 <div class="announcements__details">
                     <p>Spring and Summer Camp registration open</p>
@@ -125,9 +109,6 @@
                     </span>
                 </div>
             </article>
-
-END ANNOUNCEMENTS -->
-
                 <a href="play.html">
                     <span class="hero__links--icon">
                         <img src="imgs/misc/play-icon.png" alt="Play icon">
@@ -172,9 +153,6 @@ END ANNOUNCEMENTS -->
                     </a>
                 </ul>
                </article>
-
-<!-- HIDE ANNOUNCEMENTS 022225 JA
-
                <article class="announcements announcements--footer" aria-expanded="false">
                 <div class="announcements__details">
                     <p>Spring and Summer Camp registration open</p>
@@ -195,12 +173,9 @@ END ANNOUNCEMENTS -->
                     </span>
                 </div>
             </article>
-
-END ANNOUNCEMENTS -->
-
            </footer>
     </main>
     <!-- Javascript  -->
-     <script src="assets/js/app.js"></script>
+     <script defer src="assets/js/app.js"></script>
 </body>
 </html>
