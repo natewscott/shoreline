@@ -43,7 +43,10 @@
 
     &--hero {
         display: flex;
-       
+        width: 90%;
+       &[aria-expanded="false"] {
+        width: 100%;
+    }
 
         @include breakpoint(medium) {
             display: none;

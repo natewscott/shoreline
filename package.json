@@ -4,11 +4,16 @@
   "description": "Shoreline Lake Website",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch assets/sass/main.scss assets/css/styles.css"
+    "sass": "sass --watch assets/sass/main.scss assets/css/styles.css",
+    "generate-sitemap": "node generateSitemap.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.79.4"
+  },
+  "dependencies": {
+    "sitemap": "^8.0.0",
+    "sitemap-generator": "^8.5.1"
   }
 }

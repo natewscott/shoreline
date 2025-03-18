@@ -1,4 +1,7 @@
 .accordion {
+    h6 {
+        text-transform: none;
+    }
     &__header {
         cursor: pointer;
         display: flex;
@@ -30,6 +33,6 @@
 }
 
 .events-img {
-    margin: 0 auto;
-    max-width: 250px;;
+    margin: 2.4rem auto;
+    // max-width: 95%;
 }

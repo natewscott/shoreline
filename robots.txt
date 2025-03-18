@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /dev/
+Disallow: /campshoreline/cgi-bin/
+Disallow: /media/media.html
+Disallow: /campshoreline/
+Disallow: /download/
+Disallow: /beta/
