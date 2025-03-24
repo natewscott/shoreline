@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/shorlin/public_html/test
+    - if [ " $BRANCH" == "main"]; then export DEPLOYPATH=/home/shorlin/public_html
+   - if [ " $BRANCH" == "beta"]; then export DEPLOYPATH=/home/shorlin/public_html/beta
     - /bin/cp -R * $DEPLOYPATH
