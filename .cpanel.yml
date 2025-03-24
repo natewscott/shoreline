@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/shorlin/public_html/test
+    - /bin/cp -R * $DEPLOYPATH
